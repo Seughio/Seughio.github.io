@@ -1,0 +1,21 @@
+.md-typeset img[src*="assets/figures/"] {
+  display: block;
+  width: auto !important;
+  max-width: min(100%, 34rem);
+  max-height: 70vh;
+  height: auto !important;
+  object-fit: contain;
+  margin: 1rem auto;
+}
+
+.md-typeset p:has(> img[src*="assets/figures/"]:only-child) {
+  text-align: center;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset img[src*="assets/figures/"] {
+    max-width: 94%;
+    max-height: 60vh;
+    margin: 0.8rem auto;
+  }
+}

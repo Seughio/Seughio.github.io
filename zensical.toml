@@ -1,0 +1,104 @@
+[project]
+site_name = "Seughio 的课程笔记"
+site_description = "Seughio 的课程笔记站点，整理专业必修课程与工程热力学（甲）学习笔记。"
+site_author = "Seughio"
+copyright = """
+Copyright &copy; 2026 Seughio
+"""
+extra_javascript = [
+  "javascripts/mathjax.js",
+  "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+]
+extra_css = [
+  "stylesheets/figures.css",
+]
+
+nav = [
+  { "首页" = "index.md" },
+  { "专业必修" = [
+    { "专业必修" = "专业必修/index.md" },
+    { "工程热力学（甲）" = [
+      { "课程概览" = "专业必修/工程热力学（甲）/index.md" },
+      { "第 1 章 热力学基本定律" = "专业必修/工程热力学（甲）/01-热力学基本定律.md" },
+      { "第 2 章 能量与热力学第一定律" = "专业必修/工程热力学（甲）/02-能量与热力学第一定律.md" },
+      { "第 3 章 熵与热力学第二定律" = "专业必修/工程热力学（甲）/03-熵与热力学第二定律.md" },
+      { "第 4 章 工质的热力性质" = "专业必修/工程热力学（甲）/04-工质的热力性质.md" },
+      { "第 5 章 气体热力性质" = "专业必修/工程热力学（甲）/05-气体热力性质.md" },
+      { "第 6 章 蒸气热力性质" = "专业必修/工程热力学（甲）/06-蒸气热力性质.md" },
+      { "第 7 章 理想气体混合物与湿空气" = "专业必修/工程热力学（甲）/07-理想气体混合物与湿空气.md" },
+      { "第 8 章 理想气体热力过程" = "专业必修/工程热力学（甲）/08-理想气体热力过程.md" },
+      { "第 9 章 气体与蒸气的流动" = "专业必修/工程热力学（甲）/09-气体与蒸气的流动.md" },
+      { "第 10 章 气体压缩" = "专业必修/工程热力学（甲）/10-气体压缩.md" },
+      { "第 11 章 蒸汽动力循环" = "专业必修/工程热力学（甲）/11-蒸汽动力循环.md" },
+      { "第 12 章 气体动力循环" = "专业必修/工程热力学（甲）/12-气体动力循环.md" },
+      { "第 13 章 制冷循环" = "专业必修/工程热力学（甲）/13-制冷循环.md" },
+      { "第 14 章 化学反应系统的热力学原理" = "专业必修/工程热力学（甲）/14-化学反应系统的热力学原理.md" },
+    ] },
+  ] },
+]
+
+[project.theme]
+language = "zh"
+features = [
+  "announce.dismiss",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "切换到深色模式"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "切换到浅色模式"
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.magiclink]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]
