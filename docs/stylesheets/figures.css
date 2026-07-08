@@ -1,21 +1,30 @@
-.md-typeset img[src*="assets/figures/"] {
+.md-typeset img[src*="figures/"] {
   display: block;
-  width: auto !important;
-  max-width: min(100%, 34rem);
-  max-height: 70vh;
-  height: auto !important;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
   margin: 1rem auto;
 }
 
-.md-typeset p:has(> img[src*="assets/figures/"]:only-child) {
+.md-typeset img.fig-small {
+  max-width: 16rem;
+}
+
+.md-typeset img.fig-medium {
+  max-width: 24rem;
+}
+
+.md-typeset img.fig-wide {
+  max-width: 38rem;
+}
+
+.md-typeset p:has(> img[src*="figures/"]:only-child) {
   text-align: center;
 }
 
 @media screen and (max-width: 44.984375em) {
-  .md-typeset img[src*="assets/figures/"] {
+  .md-typeset img[src*="figures/"] {
     max-width: 94%;
-    max-height: 60vh;
     margin: 0.8rem auto;
   }
 }
