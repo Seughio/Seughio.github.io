@@ -18,6 +18,11 @@
   max-width: 38rem;
 }
 
+.md-typeset .term-blue {
+  color: #1d6fd7;
+  font-weight: 600;
+}
+
 .md-typeset p:has(> img[src*="figures/"]:only-child) {
   text-align: center;
 }
