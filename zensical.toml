@@ -3,6 +3,8 @@ site_name = "Seughio 的课程笔记"
 site_url = "https://seughio.github.io/"
 site_description = "Seughio 的本科课程学习笔记，整理课程知识、公式、图示与学习资料。"
 site_author = "Seughio"
+repo_url = "https://github.com/Seughio/Seughio.github.io"
+repo_name = "Seughio.github.io"
 copyright = """
 Copyright &copy; 2026 Seughio
 """
@@ -12,6 +14,7 @@ extra_javascript = [
 ]
 extra_css = [
   "stylesheets/figures.css",
+  "stylesheets/site.css",
 ]
 
 nav = [
@@ -108,10 +111,12 @@ nav = [
       { "第 9 章 激波" = "专业必修/工程流体力学（甲）/09-激波.md" },
     ] },
   ] },
+  { "反馈与纠错" = "feedback.md" },
 ]
 
 [project.theme]
 language = "zh"
+icon = { repo = "fontawesome/brands/github" }
 features = [
   "announce.dismiss",
   "content.code.annotate",
@@ -132,13 +137,18 @@ features = [
 
 [[project.theme.palette]]
 scheme = "default"
+primary = "blue"
+accent = "light blue"
 toggle.icon = "lucide/sun"
 toggle.name = "切换到深色模式"
 
 [[project.theme.palette]]
 scheme = "slate"
+primary = "blue"
+accent = "light blue"
 toggle.icon = "lucide/moon"
 toggle.name = "切换到浅色模式"
+
 
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]

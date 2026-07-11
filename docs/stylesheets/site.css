@@ -1,0 +1,175 @@
+/* 全站颜色变量：以后想整体换色，优先修改这里。 */
+:root {
+  --site-blue: #288ce8; /* 主蓝色：顶部标题栏、标签导航栏和移动端导航标题。 */
+  --site-blue-dark: #1c7cd6; /* 深蓝色：浅色模式中当前侧栏项的文字。 */
+  --site-blue-deep: #2286de; /* 深色模式主蓝色：保证深色背景下不过亮。 */
+  --site-blue-soft: #eaf3fb; /* 极浅蓝色：浅色模式中当前侧栏项的背景。 */
+  --site-blue-border: #c9dff1; /* 淡蓝边框：浅色模式二级标题下方的分隔线。 */
+} /* 全站颜色变量结束。 */
+
+/* 浅色模式的 Zensical 主题颜色变量。 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--site-blue); /* 主题主色：按钮、主题组件等优先使用该颜色。 */
+  --md-primary-fg-color--light: #3c83ba; /* 主题主色的浅色版本。 */
+  --md-primary-fg-color--dark: var(--site-blue-dark); /* 主题主色的深色版本。 */
+  --md-accent-fg-color: #1976c5; /* 强调色：链接悬停、交互控件高亮等。 */
+  --md-typeset-a-color: #1769a8; /* 正文链接的默认颜色。 */
+} /* 浅色模式主题变量结束。 */
+
+/* 深色模式的页面背景变量。 */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #171b22; /* 页面和侧栏主背景：深灰蓝，比纯黑稍亮。 */
+  --md-default-bg-color--light: rgb(23 27 34 / 54%); /* 主背景的半透明版本。 */
+  --md-default-bg-color--lighter: rgb(23 27 34 / 26%); /* 用于更弱的背景层次。 */
+  --md-default-bg-color--lightest: rgb(23 27 34 / 7%); /* 用于最浅的背景与交互层。 */
+  --md-code-bg-color: #202630; /* 行内代码和代码块背景，比页面背景稍亮。 */
+  --md-code-bg-color--light: rgb(32 38 48 / 90%); /* 代码背景的半透明版本。 */
+  --color-background: 23 27 34; /* Zensical 现代组件使用的主背景 RGB 数值。 */
+  --color-background-subtle: 31 37 47; /* 搜索、弹窗等次级区域的背景 RGB 数值。 */
+  --color-backdrop: 12 15 20; /* 弹窗遮罩背景，仍保留足够的明暗对比。 */
+} /* 深色模式背景变量结束。 */
+
+/* 页面最上方的站点标题栏。 */
+.md-header {
+  background-color: var(--site-blue); /* 将标题栏背景设为主蓝色。 */
+  box-shadow: 0 0.1rem 0.35rem rgb(8 49 82 / 22%); /* 添加轻微阴影，使标题栏与正文分层。 */
+} /* 标题栏样式结束。 */
+
+/* 标题栏中的站点名称。 */
+.md-header__title {
+  color: #fff; /* 将“Seughio 的课程笔记”设为白色。 */
+} /* 站点名称样式结束。 */
+
+/* 标题栏中的菜单、搜索和明暗模式切换等图标按钮。 */
+.md-header__button {
+  color: #fff; /* 让浅色模式和深色模式按钮都显示为白色。 */
+} /* 标题栏图标按钮样式结束。 */
+
+/* 标题栏中的 GitHub 仓库入口。 */
+.md-header .md-source {
+  color: #fff; /* 将 GitHub 图标和仓库名称统一设为白色。 */
+} /* GitHub 仓库入口样式结束。 */
+
+/* 桌面端标题栏中的搜索框。 */
+.md-header .md-search__form {
+  background-color: rgb(255 255 255 / 14%); /* 用半透明白色区分搜索框，同时保留蓝色背景。 */
+} /* 搜索框背景样式结束。 */
+
+/* 鼠标悬停或键盘焦点进入搜索框时。 */
+.md-header .md-search__form:hover,
+.md-header .md-search__form:focus-within {
+  background-color: rgb(255 255 255 / 22%); /* 交互时稍微提高搜索框背景亮度。 */
+} /* 搜索框交互状态结束。 */
+
+/* 搜索框中用户输入的文字。 */
+.md-header .md-search__input {
+  color: #fff; /* 将搜索关键词设为白色。 */
+} /* 搜索框输入文字样式结束。 */
+
+/* 搜索框尚未输入时显示的“查找”提示文字。 */
+.md-header .md-search__input::placeholder {
+  color: rgb(255 255 255 / 76%); /* 使用略透明的白色，与实际输入内容区分。 */
+  opacity: 1; /* 覆盖浏览器默认的 placeholder 透明度。 */
+} /* 搜索框提示文字样式结束。 */
+
+/* 搜索框内的放大镜和清除按钮。 */
+.md-header .md-search__icon {
+  color: #fff; /* 将搜索相关图标设为白色。 */
+} /* 搜索框图标样式结束。 */
+
+/* Zensical 桌面端实际显示的“查找”搜索按钮。 */
+.md-header .md-search__button {
+  background-color: rgb(255 255 255 / 14%); /* 使用半透明白色作为搜索按钮背景。 */
+  color: #fff; /* 将按钮中的“查找”文字设为白色。 */
+} /* 桌面端搜索按钮样式结束。 */
+
+/* 鼠标悬停或键盘聚焦桌面端搜索按钮时。 */
+.md-header .md-search__button:hover,
+.md-header .md-search__button:focus {
+  background-color: rgb(255 255 255 / 22%); /* 交互时稍微提高按钮背景亮度。 */
+  color: #fff; /* 防止主题悬停规则把“查找”恢复为深色。 */
+} /* 桌面端搜索按钮交互状态结束。 */
+
+/* 搜索按钮左侧由伪元素绘制的放大镜。 */
+.md-header .md-search__button::before {
+  background-color: #fff; /* 将放大镜图标设为白色。 */
+} /* 搜索按钮放大镜样式结束。 */
+
+/* 搜索按钮右侧的 Ctrl+K 快捷键提示。 */
+.md-header .md-search__button::after {
+  background-color: rgb(255 255 255 / 18%); /* 给快捷键提示使用半透明白色背景。 */
+  color: #fff; /* 将 Ctrl+K 文字设为白色。 */
+} /* 搜索快捷键提示样式结束。 */
+
+/* 桌面端标题栏下方的一级标签导航。 */
+.md-tabs {
+  background-color: var(--site-blue); /* 与标题栏使用同一种蓝色，避免上下分成两种颜色。 */
+} /* 一级标签导航样式结束。 */
+
+/* 一级标签导航中的普通链接。 */
+.md-tabs__link {
+  color: rgb(255 255 255 / 82%); /* 未选中的标签使用半透明白色，降低视觉权重。 */
+} /* 普通标签链接样式结束。 */
+
+/* 获得键盘焦点的标签链接。 */
+.md-tabs__link:focus,
+/* 鼠标悬停的标签链接。 */
+.md-tabs__link:hover,
+/* 当前选中的标签链接。 */
+.md-tabs__item--active .md-tabs__link {
+  color: #fff; /* 交互中或当前标签使用纯白色突出显示。 */
+} /* 标签链接交互状态结束。 */
+
+/* 浅色模式下左侧目录中的当前页面链接。 */
+[data-md-color-scheme="default"] .md-nav__link--active {
+  color: var(--site-blue-dark); /* 当前页面链接使用深蓝色文字。 */
+  font-weight: 650; /* 略微加粗当前页面链接；数值越大，文字越粗。 */
+} /* 当前页面链接文字样式结束。 */
+
+/* 浅色模式下当前页面链接的背景和尺寸；排除仅用于包裹子目录的容器。 */
+[data-md-color-scheme="default"] .md-nav__link--active:not(.md-nav__container) {
+  background: var(--site-blue-soft); /* 当前页面链接使用浅蓝色背景。 */
+  border-radius: 6px; /* 四个角统一使用清晰但不过分夸张的圆角。 */
+  margin: 0.08rem 0.2rem 0.08rem 0; /* 留出四周空间，避免圆角贴边或被侧栏裁切。 */
+  padding: 0.26rem 0.45rem; /* 使用均衡内边距，让文字与圆角背景保持距离。 */
+} /* 当前页面链接背景样式结束。 */
+
+/* 浅色模式下正文中的二级标题。 */
+[data-md-color-scheme="default"] .md-typeset h2 {
+  border-bottom: 1px solid var(--site-blue-border); /* 在二级标题下添加一条淡蓝分隔线。 */
+  padding-bottom: 0.28rem; /* 增加标题文字与分隔线之间的距离。 */
+} /* 浅色模式二级标题样式结束。 */
+
+/* 浅色模式下没有自定义 class 的普通 Markdown 表格表头。 */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: #edf5fb; /* 使用极浅蓝色区分表头和表格正文。 */
+} /* 浅色模式表头样式结束。 */
+
+/* 深色模式下的站点标题栏。 */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: var(--site-blue-deep); /* 深色模式使用较深的蓝色，降低亮度。 */
+} /* 深色模式标题栏样式结束。 */
+
+/* 深色模式下的一级标签导航。 */
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--site-blue-deep); /* 与深色模式标题栏保持同色。 */
+} /* 深色模式一级标签导航样式结束。 */
+
+/* 深色模式下左侧目录中的当前页面链接。 */
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #7fc3f4; /* 使用亮蓝色，确保在深色背景上清晰可见。 */
+} /* 深色模式当前页面链接样式结束。 */
+
+/* 深色模式下正文中的二级标题。 */
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom: 1px solid rgb(127 195 244 / 28%); /* 添加低透明度亮蓝分隔线。 */
+  padding-bottom: 0.28rem; /* 增加标题文字与分隔线之间的距离。 */
+} /* 深色模式二级标题样式结束。 */
+
+/* 当屏幕宽度不超过 76.234375em 时启用，主要覆盖手机和平板布局。 */
+@media screen and (max-width: 76.234375em) {
+  /* 移动端左侧抽屉导航最上方的标题区域。 */
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background-color: var(--site-blue); /* 让移动端抽屉标题与桌面端标题栏保持同色。 */
+  } /* 移动端抽屉标题样式结束。 */
+} /* 移动端媒体查询结束。 */
