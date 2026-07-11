@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <style>text{font-family:"Microsoft YaHei",sans-serif;fill:#1f2937}.box{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}.line{stroke:#64748b;stroke-width:2;fill:none}</style>
+  <text x="500" y="42" text-anchor="middle" font-size="28">复杂应力状态的四种强度理论</text>
+  <rect class="box" x="365" y="70" width="270" height="65" rx="6"/><text x="500" y="110" text-anchor="middle" font-size="23">三个主应力 σ₁ ≥ σ₂ ≥ σ₃</text>
+  <path class="line" d="M500 135 V170 M145 170 H855 M145 170 V205 M380 170 V205 M620 170 V205 M855 170 V205"/>
+  <rect class="box" x="35" y="205" width="220" height="160" rx="6"/><text x="145" y="242" text-anchor="middle" font-size="22" fill="#dc2626">第一强度理论</text><text x="145" y="280" text-anchor="middle" font-size="19">最大拉应力</text><text x="145" y="315" text-anchor="middle" font-size="18">脆性断裂</text><text x="145" y="343" text-anchor="middle" font-size="17">常用于脆性材料</text>
+  <rect class="box" x="270" y="205" width="220" height="160" rx="6"/><text x="380" y="242" text-anchor="middle" font-size="22" fill="#dc2626">第二强度理论</text><text x="380" y="280" text-anchor="middle" font-size="19">最大拉应变</text><text x="380" y="315" text-anchor="middle" font-size="18">脆性断裂</text><text x="380" y="343" text-anchor="middle" font-size="17">常用于脆性材料</text>
+  <rect class="box" x="510" y="205" width="220" height="160" rx="6"/><text x="620" y="242" text-anchor="middle" font-size="22" fill="#2563eb">第三强度理论</text><text x="620" y="280" text-anchor="middle" font-size="19">最大切应力</text><text x="620" y="315" text-anchor="middle" font-size="18">屈服</text><text x="620" y="343" text-anchor="middle" font-size="17">常用于塑性材料</text>
+  <rect class="box" x="745" y="205" width="220" height="160" rx="6"/><text x="855" y="242" text-anchor="middle" font-size="22" fill="#2563eb">第四强度理论</text><text x="855" y="280" text-anchor="middle" font-size="19">畸变能密度</text><text x="855" y="315" text-anchor="middle" font-size="18">屈服</text><text x="855" y="343" text-anchor="middle" font-size="17">常用于塑性材料</text>
+  <text x="500" y="425" text-anchor="middle" font-size="19" fill="#64748b">先求危险点应力状态与主应力，再按材料和失效形式选取强度理论</text>
+</svg>
