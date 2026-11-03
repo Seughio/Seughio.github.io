@@ -99,3 +99,54 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- 公司金融等由复习版 HTML 转换的笔记 ---------- */
+
+/* 章标题下方的英文书名。 */
+.md-typeset .cf-subtitle {
+  margin-top: -0.6rem;
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+
+/* 标题与表格中的英文术语：弱化显示，不进入侧栏目录。 */
+.md-typeset .cf-en {
+  margin-left: 0.25em;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* SVG 图示：限制宽度；深色模式下加浅色底板，保证深色线条可读。 */
+.md-typeset img.cf-fig {
+  width: 100%;
+  max-width: 40rem;
+  margin-bottom: 0.3rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset img.cf-fig {
+  background: #f4f2ec;
+  border-radius: 6px;
+  padding: 0.4rem;
+}
+
+/* 图注：小字，紧跟在图下方。 */
+.md-typeset .cf-caption {
+  max-width: 40rem;
+  margin: 0 auto 1.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  line-height: 1.6;
+}
+
+/* 定义列表：术语标签着色，与解释紧凑排列。 */
+.md-typeset dl dt {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+.md-typeset dl dd {
+  margin-top: 0.15rem;
+  margin-bottom: 0.6rem;
+}

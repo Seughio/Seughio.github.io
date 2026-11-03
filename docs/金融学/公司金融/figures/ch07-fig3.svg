@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg aria-label="折线显示 NPV 现值在第二年达到最高，其后下降" role="img" viewbox="0 0 590 182" xmlns="http://www.w3.org/2000/svg">
+<title>延迟期权：NPV 现值随启动年份先升后降</title>
+<line stroke="#9c9585" stroke-width="1" x1="123.9" x2="466.0" y1="150" y2="150"></line>
+<line stroke="#9c9585" stroke-width="1" x1="123.9" x2="123.9" y1="150" y2="40"></line>
+<line stroke="#9c9585" stroke-width=".6" x1="123.9" x2="119.9" y1="118.6" y2="118.6"></line>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="end" x="116.9" y="121.6">5,000</text>
+<line stroke="#9c9585" stroke-width=".6" x1="123.9" x2="119.9" y1="79.3" y2="79.3"></line>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="end" x="116.9" y="82.3">6,000</text>
+<line stroke="#9c9585" stroke-width=".6" x1="123.9" x2="119.9" y1="40.0" y2="40.0"></line>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="end" x="116.9" y="43.0">7,000</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="123.9" y="165">t=0</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="203.4" y="165">t=1</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="283.0" y="165">t=2</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="362.6" y="165">t=3</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="442.1" y="165">t=4</text>
+<polyline fill="none" points="123.9,118.6 203.4,65.0 283.0,58.5 362.6,76.8 442.1,93.9" stroke="#0f5c56" stroke-width="1.6"></polyline>
+<circle cx="123.9" cy="118.6" fill="#0f5c56" r="3"></circle>
+<circle cx="203.4" cy="65.0" fill="#0f5c56" r="3"></circle>
+<circle cx="283.0" cy="58.5" fill="#0f5c56" r="3"></circle>
+<circle cx="362.6" cy="76.8" fill="#0f5c56" r="3"></circle>
+<circle cx="442.1" cy="93.9" fill="#0f5c56" r="3"></circle>
+<line stroke="#9c3d2e" stroke-dasharray="3 3" stroke-width=".8" x1="283.0" x2="283.0" y1="52.5" y2="150"></line>
+<text fill="#9c3d2e" font-family="Georgia, serif" font-size="9.5" text-anchor="middle" x="283.0" y="46.5">6,529</text>
+</svg>

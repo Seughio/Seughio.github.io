@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg aria-label="决策树：现在测试，一年后视结果决定是否投产" role="img" viewbox="0 40 590 218" xmlns="http://www.w3.org/2000/svg">
+<title>SEC 项目决策树</title>
+<line stroke="#9c9585" stroke-width="1.1" x1="54.2" x2="172.0" y1="150.0" y2="150.0"></line>
+<line stroke="#9c9585" stroke-width="1.1" x1="180.0" x2="325.8" y1="150.0" y2="78.0"></line>
+<line stroke="#9c9585" stroke-width="1.1" x1="180.0" x2="325.8" y1="150.0" y2="222.0"></line>
+<line stroke="#9c9585" stroke-width="1.0" x1="334.2" x2="468.0" y1="78.0" y2="52.0"></line>
+<line stroke="#9c9585" stroke-width="1.0" x1="334.2" x2="468.0" y1="78.0" y2="104.0"></line>
+<line stroke="#9c9585" stroke-width="1.0" x1="334.2" x2="468.0" y1="222.0" y2="196.0"></line>
+<line stroke="#9c9585" stroke-width="1.0" x1="334.2" x2="468.0" y1="222.0" y2="248.0"></line>
+<rect fill="#0f5c56" height="8.4" width="8.4" x="45.8" y="145.8"></rect>
+<rect fill="#0f5c56" height="8.4" width="8.4" x="325.8" y="73.8"></rect>
+<rect fill="#0f5c56" height="8.4" width="8.4" x="325.8" y="217.8"></rect>
+<circle cx="176" cy="150" fill="#8a6a2f" r="4.0"></circle>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="50.0" y="172.0">现在</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="176.0" y="172.0">一年后</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="end" x="44.0" y="138.0">测试</text>
+<text fill="#8a6a2f" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="252.0" y="104.0">成功 75%</text>
+<text fill="#8a6a2f" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="252.0" y="200.0">失败 25%</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="400.0" y="58.0">投资</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="400.0" y="101.0">不投</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="400.0" y="202.0">投资</text>
+<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8.5" text-anchor="middle" x="400.0" y="245.0">不投</text>
+<text fill="#0f5c56" font-family="Georgia, serif" font-size="9.5" text-anchor="start" x="470.0" y="55.0">1,517</text>
+<text fill="#7d848e" font-family="Georgia, serif" font-size="9.5" text-anchor="start" x="470.0" y="107.0">0</text>
+<text fill="#9c3d2e" font-family="Georgia, serif" font-size="9.5" text-anchor="start" x="470.0" y="199.0">−3,611</text>
+<text fill="#7d848e" font-family="Georgia, serif" font-size="9.5" text-anchor="start" x="470.0" y="251.0">0</text>
+</svg>
