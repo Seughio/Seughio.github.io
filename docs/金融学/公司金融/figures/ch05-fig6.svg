@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="44" y="16" font-size="12" fill="#52514e">S：投资 100</text>
+<rect x="157.0" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="178.0" y="16" font-size="12" fill="#52514e">L：投资 1,000</text>
+<text x="50" y="48" font-size="12.5" font-weight="600" fill="#0b0b0b">IRR</text>
+<line x1="50" x2="310" y1="284" y2="284" stroke="#a3a29c"/>
+<path d="M96.0,284 V101.3 Q96.0,97.3 100.0,97.3 H156.0 Q160.0,97.3 160.0,101.3 V284 Z" fill="#2a78d6"/>
+<text x="128.0" y="90.3" font-size="12" fill="#0b0b0b" text-anchor="middle">100%</text>
+<text x="128.0" y="302" font-size="11.5" fill="#52514e" text-anchor="middle">S</text>
+<path d="M200.0,284 V213.3 Q200.0,209.3 204.0,209.3 H260.0 Q264.0,209.3 264.0,213.3 V284 Z" fill="#eb6834"/>
+<text x="232.0" y="202.3" font-size="12" fill="#0b0b0b" text-anchor="middle">40%</text>
+<text x="232.0" y="302" font-size="11.5" fill="#52514e" text-anchor="middle">L</text>
+<text x="370" y="48" font-size="12.5" font-weight="600" fill="#0b0b0b">NPV（R = 10%）</text>
+<line x1="370" x2="630" y1="284" y2="284" stroke="#a3a29c"/>
+<path d="M416.0,284 V226.9 Q416.0,222.9 420.0,222.9 H476.0 Q480.0,222.9 480.0,226.9 V284 Z" fill="#2a78d6"/>
+<text x="448.0" y="215.9" font-size="12" fill="#0b0b0b" text-anchor="middle">81.82</text>
+<text x="448.0" y="302" font-size="11.5" fill="#52514e" text-anchor="middle">S</text>
+<path d="M520.0,284 V84.4 Q520.0,80.4 524.0,80.4 H580.0 Q584.0,80.4 584.0,84.4 V284 Z" fill="#eb6834"/>
+<text x="552.0" y="73.4" font-size="12" fill="#0b0b0b" text-anchor="middle">272.73</text>
+<text x="552.0" y="302" font-size="11.5" fill="#52514e" text-anchor="middle">L</text>
+</svg>

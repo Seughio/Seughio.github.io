@@ -1,22 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg aria-label="NPV 曲线与 IRR 交点" role="img" viewbox="45 0 625 145" xmlns="http://www.w3.org/2000/svg">
-<title>NPV 曲线：NPV 随折现率单调下降，横轴截距即 IRR</title>
-<line stroke="#9c9585" stroke-width="1.1" x1="76" x2="636" y1="86.33" y2="86.33"></line>
-<line stroke="#9c9585" stroke-width="1.1" x1="76" x2="76" y1="21.17" y2="126.00"></line>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" x="646" y="89.33">R</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="end" x="72" y="22.87">NPV</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="middle" x="76.0" y="96.83">0%</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="middle" x="214.5" y="96.83">10%</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="middle" x="353.0" y="96.83">20%</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="middle" x="491.5" y="96.83">30%</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="middle" x="630.0" y="96.83">40%</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="end" x="70" y="33.27">100</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="end" x="70" y="89.93">0</text>
-<text fill="#7d848e" font-family="Georgia, serif" font-size="11" text-anchor="end" x="70" y="123.93">−60</text>
-<polyline fill="none" points="76.00,29.67 82.16,31.42 88.31,33.14 94.47,34.83 100.62,36.50 106.78,38.14 112.93,39.76 119.09,41.35 125.24,42.92 131.40,44.47 137.56,45.99 143.71,47.49 149.87,48.96 156.02,50.42 162.18,51.85 168.33,53.26 174.49,54.65 180.64,56.02 186.80,57.37 192.96,58.70 199.11,60.02 205.27,61.31 211.42,62.58 217.58,63.84 223.73,65.08 229.89,66.30 236.04,67.51 242.20,68.69 248.36,69.86 254.51,71.02 260.67,72.16 266.82,73.28 272.98,74.39 279.13,75.48 285.29,76.56 291.44,77.62 297.60,78.67 303.76,79.71 309.91,80.73 316.07,81.74 322.22,82.73 328.38,83.71 334.53,84.68 340.69,85.64 346.84,86.58 353.00,87.51 359.16,88.43 365.31,89.34 371.47,90.24 377.62,91.12 383.78,92.00 389.93,92.86 396.09,93.71 402.24,94.55 408.40,95.38 414.56,96.20 420.71,97.01 426.87,97.81 433.02,98.60 439.18,99.38 445.33,100.16 451.49,100.92 457.64,101.67 463.80,102.41 469.96,103.15 476.11,103.87 482.27,104.59 488.42,105.30 494.58,106.00 500.73,106.69 506.89,107.38 513.04,108.05 519.20,108.72 525.36,109.38 531.51,110.04 537.67,110.68 543.82,111.32 549.98,111.95 556.13,112.58 562.29,113.19 568.44,113.80 574.60,114.40 580.76,115.00 586.91,115.59 593.07,116.17 599.22,116.75 605.38,117.32 611.53,117.88 617.69,118.44 623.84,118.99 630.00,119.54" stroke="#0f5c56" stroke-width="1.9"></polyline>
-<line stroke="#8a6a2f" stroke-dasharray="2 3" stroke-width="1" x1="345.2" x2="345.2" y1="86.33" y2="46.67"></line>
-<circle cx="345.2" cy="86.33" fill="#8a6a2f" r="3.8"></circle>
-<text fill="#8a6a2f" font-family="Georgia, serif" font-size="11" font-weight="bold" text-anchor="middle" x="345.2" y="41.67">IRR = 19.44%</text>
-<text fill="#0f5c56" font-family="Microsoft YaHei, sans-serif" font-size="11" x="86" y="111.83">R &lt; IRR：NPV &gt; 0，接受</text>
-<text fill="#9c3d2e" font-family="Microsoft YaHei, sans-serif" font-size="11" x="352" y="111.83">R &gt; IRR：NPV &lt; 0，拒绝</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="44" y="16" font-size="12" fill="#52514e">现金流</text>
+<rect x="94.5" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="115.5" y="16" font-size="12" fill="#52514e">现值（R = 12%）</text>
+<line x1="70" x2="612" y1="262.0" y2="262.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="62.0" y="266.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0</text>
+<line x1="70" x2="612" y1="206.5" y2="206.5" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="210.5" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">25k</text>
+<line x1="70" x2="612" y1="151.0" y2="151.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="155.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">50k</text>
+<line x1="70" x2="612" y1="95.5" y2="95.5" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="99.5" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">75k</text>
+<line x1="70" x2="612" y1="40.0" y2="40.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">100k</text>
+<text x="171.6" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">第 1 年</text>
+<text x="341.0" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">第 2 年</text>
+<text x="510.4" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">第 3 年</text>
+<path d="M119.8,262.0 V125.9 Q119.8,121.9 123.8,121.9 H161.8 Q165.8,121.9 165.8,125.9 V262.0 Z" fill="#2a78d6"/>
+<text x="142.8" y="115.9" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">63,120</text>
+<path d="M177.4,262.0 V140.9 Q177.4,136.9 181.4,136.9 H219.4 Q223.4,136.9 223.4,140.9 V262.0 Z" fill="#eb6834"/>
+<text x="200.4" y="130.9" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">56,357</text>
+<path d="M289.2,262.0 V108.8 Q289.2,104.8 293.2,104.8 H331.2 Q335.2,104.8 335.2,108.8 V262.0 Z" fill="#2a78d6"/>
+<text x="312.2" y="98.8" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">70,800</text>
+<path d="M346.8,262.0 V140.7 Q346.8,136.7 350.8,136.7 H388.8 Q392.8,136.7 392.8,140.7 V262.0 Z" fill="#eb6834"/>
+<text x="369.8" y="130.7" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">56,441</text>
+<path d="M458.6,262.0 V63.8 Q458.6,59.8 462.6,59.8 H500.6 Q504.6,59.8 504.6,63.8 V262.0 Z" fill="#2a78d6"/>
+<text x="481.6" y="53.8" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">91,080</text>
+<path d="M516.2,262.0 V122.1 Q516.2,118.1 520.2,118.1 H558.2 Q562.2,118.1 562.2,122.1 V262.0 Z" fill="#eb6834"/>
+<text x="539.2" y="112.1" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">64,829</text>
 </svg>
