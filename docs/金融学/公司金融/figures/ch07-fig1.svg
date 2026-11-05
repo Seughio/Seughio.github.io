@@ -1,20 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg aria-label="两条 NPV 区间带，情景分析明显宽于敏感性分析" role="img" viewbox="0 0 590 152" xmlns="http://www.w3.org/2000/svg">
-<title>情景分析与敏感性分析的 NPV 区间对比</title>
-<line stroke="#0f5c56" stroke-linecap="round" stroke-width="3.2" x1="183.2" x2="501.8" y1="62" y2="62"></line>
-<line stroke="#0f5c56" stroke-width="1" x1="183.2" x2="183.2" y1="56" y2="68"></line>
-<line stroke="#0f5c56" stroke-width="1" x1="501.8" x2="501.8" y1="56" y2="68"></line>
-<text fill="#0f5c56" font-family="Microsoft YaHei, sans-serif" font-size="9.5" x="46" y="61">情景分析</text>
-<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8" x="46" y="73">四变量同步</text>
-<line stroke="#8a6a2f" stroke-linecap="round" stroke-width="3.2" x1="304.8" x2="360.7" y1="116" y2="116"></line>
-<line stroke="#8a6a2f" stroke-width="1" x1="304.8" x2="304.8" y1="110" y2="122"></line>
-<line stroke="#8a6a2f" stroke-width="1" x1="360.7" x2="360.7" y1="110" y2="122"></line>
-<text fill="#0f5c56" font-family="Microsoft YaHei, sans-serif" font-size="9.5" x="46" y="115">敏感性分析</text>
-<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="8" x="46" y="127">只变销量</text>
-<text fill="#9c3d2e" font-family="Georgia, serif" font-size="9.5" text-anchor="start" x="183.2" y="46">−111,719</text>
-<text fill="#0f5c56" font-family="Georgia, serif" font-size="9.5" text-anchor="end" x="501.8" y="46">159,504</text>
-<text fill="#9c3d2e" font-family="Georgia, serif" font-size="9" text-anchor="middle" x="304.8" y="136">−8,226</text>
-<text fill="#8a6a2f" font-family="Georgia, serif" font-size="9" text-anchor="middle" x="360.7" y="136">39,357</text>
-<line stroke="#7d848e" stroke-dasharray="3 3" stroke-width=".8" x1="332.7" x2="332.7" y1="34" y2="126"></line>
-<text fill="#7d848e" font-family="Microsoft YaHei, sans-serif" font-size="9" text-anchor="middle" x="332.7" y="30">基准 15,566</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<line x1="110.0" x2="110.0" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="110.0" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">−150k</text>
+<line x1="181.7" x2="181.7" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="181.7" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">−100k</text>
+<line x1="253.4" x2="253.4" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="253.4" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">−50k</text>
+<line x1="325.1" x2="325.1" y1="40" y2="262" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="325.1" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">0</text>
+<line x1="396.9" x2="396.9" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="396.9" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">50k</text>
+<line x1="468.6" x2="468.6" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="468.6" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">100k</text>
+<line x1="540.3" x2="540.3" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="540.3" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">150k</text>
+<line x1="612.0" x2="612.0" y1="40" y2="262" stroke="#e8e7e2" stroke-width="1"/>
+<text x="612.0" y="280.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">200k</text>
+<rect x="164.9" y="85.2" width="389.0" height="28" rx="4" fill="#2a78d6"/>
+<text x="100.0" y="103.2" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400">情景分析</text>
+<text x="164.9" y="79.2" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="400">−111,719</text>
+<text x="553.9" y="79.2" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="400">159,504</text>
+<line x1="347.5" x2="347.5" y1="85.2" y2="113.2" stroke="#fcfcfb" stroke-width="2.5"/>
+<rect x="313.3" y="181.4" width="68.2" height="28" rx="4" fill="#eb6834"/>
+<text x="100.0" y="199.4" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="400">敏感性分析</text>
+<text x="313.3" y="175.4" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="400">−8,226</text>
+<text x="381.6" y="175.4" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="400">39,357</text>
+<line x1="347.5" x2="347.5" y1="181.4" y2="209.4" stroke="#fcfcfb" stroke-width="2.5"/>
+<text x="347.5" y="52.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">基准 15,566</text>
+<text x="612.0" y="298.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">NPV</text>
 </svg>

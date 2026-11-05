@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="44" y="16" font-size="12" fill="#52514e">BUD</text>
+<rect x="94.5" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="115.5" y="16" font-size="12" fill="#52514e">SAM</text>
+<text x="20.0" y="50" font-size="12.5" font-weight="600" fill="#0b0b0b">ROE</text>
+<line x1="20.0" x2="147.5" y1="270" y2="270" stroke="#a3a29c"/>
+<path d="M30.6,270 V180.7 Q30.6,176.7 34.6,176.7 H69.1 Q73.1,176.7 73.1,180.7 V270 Z" fill="#2a78d6"/>
+<text x="51.9" y="169.7" font-size="12" fill="#0b0b0b" text-anchor="middle">16.3%</text>
+<text x="51.9" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">BUD</text>
+<path d="M94.4,270 V100.6 Q94.4,96.6 98.4,96.6 H132.9 Q136.9,96.6 136.9,100.6 V270 Z" fill="#eb6834"/>
+<text x="115.6" y="89.6" font-size="12" fill="#0b0b0b" text-anchor="middle">30.3%</text>
+<text x="115.6" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">SAM</text>
+<text x="177.5" y="50" font-size="12.5" font-weight="600" fill="#0b0b0b">净利润率</text>
+<line x1="177.5" x2="305.0" y1="270" y2="270" stroke="#a3a29c"/>
+<path d="M188.1,270 V183.0 Q188.1,179.0 192.1,179.0 H226.6 Q230.6,179.0 230.6,183.0 V270 Z" fill="#2a78d6"/>
+<text x="209.4" y="172.0" font-size="12" fill="#0b0b0b" text-anchor="middle">15.9%</text>
+<text x="209.4" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">BUD</text>
+<path d="M251.9,270 V212.2 Q251.9,208.2 255.9,208.2 H290.4 Q294.4,208.2 294.4,212.2 V270 Z" fill="#eb6834"/>
+<text x="273.1" y="201.2" font-size="12" fill="#0b0b0b" text-anchor="middle">10.8%</text>
+<text x="273.1" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">SAM</text>
+<text x="335.0" y="50" font-size="12.5" font-weight="600" fill="#0b0b0b">总资产周转率</text>
+<line x1="335.0" x2="462.5" y1="270" y2="270" stroke="#a3a29c"/>
+<path d="M345.6,270 V244.0 Q345.6,240.0 349.6,240.0 H384.1 Q388.1,240.0 388.1,244.0 V270 Z" fill="#2a78d6"/>
+<text x="366.9" y="233.0" font-size="12" fill="#0b0b0b" text-anchor="middle">0.32</text>
+<text x="366.9" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">BUD</text>
+<path d="M409.4,270 V106.4 Q409.4,102.4 413.4,102.4 H447.9 Q451.9,102.4 451.9,106.4 V270 Z" fill="#eb6834"/>
+<text x="430.6" y="95.4" font-size="12" fill="#0b0b0b" text-anchor="middle">1.79</text>
+<text x="430.6" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">SAM</text>
+<text x="492.5" y="50" font-size="12.5" font-weight="600" fill="#0b0b0b">权益乘数</text>
+<line x1="492.5" x2="620.0" y1="270" y2="270" stroke="#a3a29c"/>
+<path d="M503.1,270 V107.1 Q503.1,103.1 507.1,103.1 H541.6 Q545.6,103.1 545.6,107.1 V270 Z" fill="#2a78d6"/>
+<text x="524.4" y="96.1" font-size="12" fill="#0b0b0b" text-anchor="middle">3.24</text>
+<text x="524.4" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">BUD</text>
+<path d="M566.9,270 V193.7 Q566.9,189.7 570.9,189.7 H605.4 Q609.4,189.7 609.4,193.7 V270 Z" fill="#eb6834"/>
+<text x="588.1" y="182.7" font-size="12" fill="#0b0b0b" text-anchor="middle">1.56</text>
+<text x="588.1" y="287" font-size="11.5" fill="#52514e" text-anchor="middle">SAM</text>
+</svg>

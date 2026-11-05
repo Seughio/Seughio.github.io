@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="44" y="16" font-size="12" fill="#52514e">资产端</text>
+<rect x="94.5" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="115.5" y="16" font-size="12" fill="#52514e">扣减项</text>
+<rect x="166.0" y="6" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text x="187.0" y="16" font-size="12" fill="#52514e">资金端</text>
+<line x1="70" x2="612" y1="262.0" y2="262.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="62.0" y="266.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0</text>
+<line x1="70" x2="612" y1="225.0" y2="225.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="229.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">100</text>
+<line x1="70" x2="612" y1="188.0" y2="188.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="192.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">200</text>
+<line x1="70" x2="612" y1="151.0" y2="151.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="155.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">300</text>
+<line x1="70" x2="612" y1="114.0" y2="114.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="118.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">400</text>
+<line x1="70" x2="612" y1="77.0" y2="77.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="81.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">500</text>
+<line x1="70" x2="612" y1="40.0" y2="40.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="62.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">600</text>
+<rect x="89.2" y="59.6" width="52" height="202.4" rx="3" fill="#2a78d6"/>
+<text x="115.2" y="52.6" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">547</text>
+<text x="115.2" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">OCF</text>
+<rect x="164.4" y="59.6" width="52" height="48.1" rx="3" fill="#eb6834"/>
+<text x="190.4" y="52.6" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">−130</text>
+<text x="190.4" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">−NCS</text>
+<rect x="239.7" y="107.7" width="52" height="122.1" rx="3" fill="#eb6834"/>
+<text x="265.7" y="100.7" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">−330</text>
+<text x="265.7" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">−ΔNWC</text>
+<rect x="315.0" y="229.8" width="52" height="32.2" rx="3" fill="#2a78d6"/>
+<text x="341.0" y="222.8" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">87</text>
+<text x="341.0" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">CFFA</text>
+<rect x="412.9" y="253.1" width="52" height="8.9" rx="3" fill="#1baf7a"/>
+<text x="438.9" y="246.1" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">24</text>
+<text x="438.9" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">流向债权人</text>
+<rect x="480.6" y="229.8" width="52" height="23.3" rx="3" fill="#1baf7a"/>
+<text x="506.6" y="222.8" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">63</text>
+<text x="506.6" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">流向股东</text>
+<rect x="548.4" y="229.8" width="52" height="32.2" rx="3" fill="#2a78d6"/>
+<text x="574.4" y="222.8" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">87</text>
+<text x="574.4" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">合计</text>
+<line x1="389.9" x2="389.9" y1="40" y2="262" stroke="#a3a29c" stroke-width="1" stroke-dasharray="4 4"/>
+</svg>
