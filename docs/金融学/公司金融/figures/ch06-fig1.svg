@@ -1,20 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
 <rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
-<text x="44" y="16" font-size="12" fill="#52514e">经营现金流 OCF</text>
-<line x1="70" x2="612" y1="262.0" y2="262.0" stroke="#a3a29c" stroke-width="1.2"/>
-<text x="62.0" y="266.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0</text>
-<line x1="70" x2="612" y1="188.0" y2="188.0" stroke="#e8e7e2" stroke-width="1"/>
-<text x="62.0" y="192.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">20k</text>
-<line x1="70" x2="612" y1="114.0" y2="114.0" stroke="#e8e7e2" stroke-width="1"/>
-<text x="62.0" y="118.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">40k</text>
-<line x1="70" x2="612" y1="40.0" y2="40.0" stroke="#e8e7e2" stroke-width="1"/>
-<text x="62.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">60k</text>
-<path d="M182.8,262.0 V112.2 Q182.8,108.2 186.8,108.2 H248.8 Q252.8,108.2 252.8,112.2 V262.0 Z" fill="#eb6834"/>
-<text x="217.8" y="102.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">41,580</text>
-<path d="M429.2,262.0 V74.4 Q429.2,70.4 433.2,70.4 H495.2 Q499.2,70.4 499.2,74.4 V262.0 Z" fill="#2a78d6"/>
-<text x="464.2" y="64.4" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">51,780</text>
-<text x="217.8" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">不计折旧（D = 0）</text>
-<text x="464.2" y="280.0" font-size="11.5" fill="#52514e" text-anchor="middle" font-weight="400">计提折旧 30,000</text>
-<line x1="257.8" x2="424.2" y1="70.4" y2="70.4" stroke="#a3a29c" stroke-dasharray="4 4"/>
-<text x="341.0" y="93.3" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">多出 10,200 = D × T</text>
+<text x="44" y="16" font-size="12" fill="#52514e">不考虑折旧时的 OCF</text>
+<rect x="194.5" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="215.5" y="16" font-size="12" fill="#52514e">折旧税盾 30,000 × 34%</text>
+<line x1="128.0" x2="128.0" y1="40" y2="186" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="128.0" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">0</text>
+<line x1="206.7" x2="206.7" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="206.7" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">10k</text>
+<line x1="285.3" x2="285.3" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="285.3" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">20k</text>
+<line x1="364.0" x2="364.0" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="364.0" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">30k</text>
+<line x1="442.7" x2="442.7" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="442.7" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">40k</text>
+<line x1="521.3" x2="521.3" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="521.3" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">50k</text>
+<line x1="600.0" x2="600.0" y1="40" y2="186" stroke="#e8e7e2" stroke-width="1"/>
+<text x="600.0" y="204.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">60k</text>
+<path d="M128.0,59.5 H451.1 Q455.1,59.5 455.1,63.5 V89.5 Q455.1,93.5 451.1,93.5 H128.0 Z" fill="#2a78d6"/>
+<path d="M128.0,132.5 H455.1 Q455.1,132.5 455.1,132.5 V166.5 Q455.1,166.5 455.1,166.5 H128.0 Z" fill="#2a78d6"/>
+<rect x="455.1" y="132.5" width="2" height="34" fill="#fcfcfb"/>
+<path d="M457.5,132.5 H531.3 Q535.3,132.5 535.3,136.5 V162.5 Q535.3,166.5 531.3,166.5 H457.5 Z" fill="#eb6834"/>
+<text x="116.0" y="80.5" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">不计折旧</text>
+<text x="116.0" y="153.5" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">计提折旧 30,000</text>
+<text x="463.1" y="80.5" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">41,580</text>
+<text x="543.3" y="153.5" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">51,780</text>
+<text x="291.5" y="153.5" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="400">41,580</text>
+<text x="495.2" y="153.5" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">+10,200</text>
+<line x1="455.1" x2="455.1" y1="93.5" y2="132.5" stroke="#a3a29c" stroke-dasharray="3 3"/>
 </svg>
