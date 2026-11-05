@@ -1,0 +1,444 @@
+/* ==========================================================================
+   页面组件（第二阶段）
+   结构：学科配色 → 章节头部 → 二级标题编号徽章 → 页尾上下页卡片 → 首页
+   学科标记 data-subject 由 javascripts/enhance.js 根据页面路径写到 <body> 上。
+   ========================================================================== */
+
+/* ---------- 学科配色：浅色模式 ---------- */
+[data-md-color-scheme="default"] {
+  --subject-science: #4553c7; /* 自然科学通识类：靛蓝。 */
+  --subject-science-strong: #36429e;
+  --subject-science-soft: #eef0fb;
+  --subject-basic: #0b7f80; /* 专业基础：青绿。 */
+  --subject-basic-strong: #08605f;
+  --subject-basic-soft: #e6f4f4;
+  --subject-major: #c4541d; /* 专业必修：赭橙。 */
+  --subject-major-strong: #9c4116;
+  --subject-major-soft: #fbefe8;
+  --subject-finance: #23845a; /* 金融学：墨绿。 */
+  --subject-finance-strong: #1a6645;
+  --subject-finance-soft: #e8f4ee;
+}
+
+/* ---------- 学科配色：深色模式（提亮，底色用半透明） ---------- */
+[data-md-color-scheme="slate"] {
+  --subject-science: #8f9cff;
+  --subject-science-strong: #b4bdff;
+  --subject-science-soft: rgb(143 156 255 / 13%);
+  --subject-basic: #4fc4c2;
+  --subject-basic-strong: #86dbd9;
+  --subject-basic-soft: rgb(79 196 194 / 13%);
+  --subject-major: #f29a62;
+  --subject-major-strong: #f7b98f;
+  --subject-major-soft: rgb(242 154 98 / 13%);
+  --subject-finance: #6fcf9b;
+  --subject-finance-strong: #9ee0bb;
+  --subject-finance-soft: rgb(111 207 155 / 13%);
+}
+
+/* 进入某个学科后，用该学科颜色替换全站强调色。 */
+body[data-subject="science"] {
+  --site-accent: var(--subject-science);
+  --site-accent-strong: var(--subject-science-strong);
+  --site-accent-soft: var(--subject-science-soft);
+}
+
+body[data-subject="basic"] {
+  --site-accent: var(--subject-basic);
+  --site-accent-strong: var(--subject-basic-strong);
+  --site-accent-soft: var(--subject-basic-soft);
+}
+
+body[data-subject="major"] {
+  --site-accent: var(--subject-major);
+  --site-accent-strong: var(--subject-major-strong);
+  --site-accent-soft: var(--subject-major-soft);
+}
+
+body[data-subject="finance"] {
+  --site-accent: var(--subject-finance);
+  --site-accent-strong: var(--subject-finance-strong);
+  --site-accent-soft: var(--subject-finance-soft);
+}
+
+/* ==========================================================================
+   章节头部：大号章节编号 + 所属课程 + 标题 + 信息标签
+   ========================================================================== */
+
+.md-typeset .chapter-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 0 0 2rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--site-accent) 20%, transparent);
+  border-radius: 14px;
+  background: var(--site-accent-soft);
+}
+
+/* 大号章节编号：衬线字体，作为页面的视觉锚点。 */
+.md-typeset .chapter-hero__num {
+  flex-shrink: 0;
+  color: var(--site-accent);
+  font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.md-typeset .chapter-hero__body {
+  min-width: 0; /* 允许长标题在 flex 中正常换行。 */
+}
+
+/* 课程路径："专业必修 · 工程热力学（甲） · 第 3 章"。 */
+.md-typeset .chapter-hero__crumb {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+}
+
+/* 头部内的标题。 */
+.md-typeset .chapter-hero h1 {
+  margin: 0.2rem 0 0.55rem;
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+/* 头部内的英文副标题。 */
+.md-typeset .chapter-hero .cf-subtitle {
+  margin: -0.35rem 0 0.6rem;
+  font-size: 0.78rem;
+}
+
+/* 信息标签行。 */
+.md-typeset .chapter-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.md-typeset .chapter-hero__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.12em 0.75em;
+  border: 1px solid var(--site-border);
+  border-radius: 999px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.66rem;
+  line-height: 1.7;
+}
+
+/* 标签图标：用 mask 让 SVG 跟随文字颜色。 */
+.md-typeset .chapter-hero__icon {
+  width: 1.05em;
+  height: 1.05em;
+  background-color: currentcolor;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
+
+.md-typeset .chapter-hero__icon[data-icon="clock"] {
+  --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>');
+}
+
+.md-typeset .chapter-hero__icon[data-icon="formula"] {
+  --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V4H6l6 8-6 8h12v-3"/></svg>');
+}
+
+.md-typeset .chapter-hero__icon[data-icon="warning"] {
+  --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg>');
+}
+
+.md-typeset .chapter-hero__icon[data-icon="example"] {
+  --icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>');
+}
+
+/* "易错"标签用红色，与易错提示块呼应。 */
+.md-typeset .chapter-hero__chip:has([data-icon="warning"]) {
+  color: #d9534f;
+}
+
+/* ==========================================================================
+   二级标题编号徽章：有徽章时不再显示左侧色条
+   ========================================================================== */
+
+.md-typeset h2:has(> .h2-num) {
+  padding-left: 0;
+}
+
+.md-typeset h2:has(> .h2-num)::before {
+  display: none;
+}
+
+.md-typeset .h2-num {
+  display: inline-block;
+  margin-right: 0.55em;
+  padding: 0.05em 0.5em;
+  border-radius: 6px;
+  background: var(--site-accent-soft);
+  color: var(--site-accent-strong);
+  font-family: var(--md-code-font-family);
+  font-size: 0.72em;
+  font-weight: 650;
+  vertical-align: 0.12em;
+}
+
+/* ==========================================================================
+   页尾：上一页 / 下一页做成两张卡片
+   ========================================================================== */
+
+/* 页尾整体改为页面同色，不再使用主题默认的黑底。 */
+.md-footer {
+  --md-footer-fg-color: var(--site-ink);
+  --md-footer-fg-color--light: var(--md-default-fg-color--light);
+  --md-footer-fg-color--lighter: var(--md-default-fg-color--lighter);
+  --md-footer-bg-color: transparent;
+  --md-footer-bg-color--dark: transparent;
+}
+
+.md-footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  padding: 1.4rem 0.8rem;
+}
+
+/* 只有"下一页"时，让它靠右。 */
+.md-footer__link--next {
+  grid-column: 2;
+}
+
+.md-footer__link {
+  align-items: center;
+  margin: 0;
+  padding: 0.75rem 0.4rem;
+  border: 1px solid var(--site-border);
+  border-radius: 12px;
+  background: var(--site-surface);
+  transition: border-color 150ms, transform 150ms;
+}
+
+.md-footer__link:focus,
+.md-footer__link:hover {
+  border-color: var(--site-accent);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.md-footer__button {
+  color: var(--site-accent);
+}
+
+.md-footer__title {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* "上一页 / 下一页"小字：放在标题上方，不再绝对定位。 */
+.md-footer__direction {
+  position: static;
+  display: block;
+  margin: 0 0 0.1rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  font-weight: 400;
+}
+
+/* 版权栏：顶部细线，弱化颜色。 */
+.md-footer-meta {
+  border-top: 1px solid var(--site-border);
+}
+
+.md-footer-meta.md-typeset a {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-footer-meta.md-typeset a:hover {
+  color: var(--site-accent);
+}
+
+/* ==========================================================================
+   首页
+   ========================================================================== */
+
+/* 标题区。 */
+.md-typeset .home-hero {
+  padding: 1rem 0 0.2rem;
+}
+
+.md-typeset .home-hero h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2.1rem;
+}
+
+.md-typeset .home-hero__lead {
+  margin-top: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.92rem;
+}
+
+/* 四个板块卡片的网格。 */
+.md-typeset .home-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+  margin: 1.6rem 0 2.6rem;
+}
+
+/* 单张板块卡片：顶部一条学科色带。 */
+.md-typeset .home-card {
+  --card-c: var(--site-accent);
+  --card-soft: var(--site-accent-soft);
+  position: relative;
+  overflow: hidden;
+  padding: 1.1rem 1.2rem 0.9rem;
+  border: 1px solid var(--site-border);
+  border-radius: 14px;
+  background: var(--md-default-bg-color);
+  transition: border-color 150ms, box-shadow 150ms, transform 150ms;
+}
+
+.md-typeset .home-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--card-c);
+}
+
+.md-typeset .home-card:hover {
+  border-color: var(--card-c);
+  box-shadow: 0 6px 20px rgb(15 23 42 / 8%);
+  transform: translateY(-2px);
+}
+
+/* 各板块卡片的学科色。 */
+.md-typeset .home-card[data-subject="science"] {
+  --card-c: var(--subject-science);
+  --card-soft: var(--subject-science-soft);
+}
+
+.md-typeset .home-card[data-subject="basic"] {
+  --card-c: var(--subject-basic);
+  --card-soft: var(--subject-basic-soft);
+}
+
+.md-typeset .home-card[data-subject="major"] {
+  --card-c: var(--subject-major);
+  --card-soft: var(--subject-major-soft);
+}
+
+.md-typeset .home-card[data-subject="finance"] {
+  --card-c: var(--subject-finance);
+  --card-soft: var(--subject-finance-soft);
+}
+
+/* 卡片标题：覆盖正文 h3 的左侧色条样式。 */
+.md-typeset .home-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.2rem 0 0.7rem;
+  padding: 0;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.md-typeset .home-card h3 a {
+  color: var(--site-ink);
+}
+
+.md-typeset .home-card h3 a:hover {
+  color: var(--card-c);
+  text-decoration: none;
+}
+
+.md-typeset .home-card .headerlink {
+  display: none;
+}
+
+/* 卡片标题前的图标方块。 */
+.md-typeset .home-card h3 .twemoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 8px;
+  background: var(--card-soft);
+  color: var(--card-c);
+}
+
+.md-typeset .home-card h3 .twemoji svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* 课程列表：虚线分隔，悬停出现箭头。加 [dir] 是为了盖过主题的 [dir=ltr] 列表缩进。 */
+[dir] .md-typeset .home-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .home-card li {
+  margin: 0;
+  padding: 0.35rem 0;
+  border-top: 1px dashed var(--site-border);
+  font-size: 0.76rem;
+}
+
+.md-typeset .home-card li a {
+  display: flex;
+  justify-content: space-between;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .home-card li a::after {
+  content: "→";
+  color: var(--card-c);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 150ms, transform 150ms;
+}
+
+.md-typeset .home-card li a:hover {
+  color: var(--card-c);
+  text-decoration: none;
+}
+
+.md-typeset .home-card li a:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   手机：屏幕宽度不超过 44.984375em
+   ========================================================================== */
+
+@media screen and (max-width: 44.984375em) {
+  /* 章节头部改为上下排列。 */
+  .md-typeset .chapter-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .md-typeset .chapter-hero__num {
+    font-size: 2.4rem;
+  }
+
+  .md-typeset .chapter-hero h1 {
+    font-size: 1.35rem;
+  }
+
+  /* 主题在手机上隐藏"上一页"的标题，只留箭头，左列收窄。 */
+  .md-footer__inner {
+    grid-template-columns: auto 1fr;
+  }
+}

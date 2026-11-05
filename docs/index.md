@@ -1,4 +1,58 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="home-hero" markdown>
+
 # Seughio 的课程笔记
+
+<p class="home-hero__lead">本科课程学习笔记，整理课程知识、公式、图示与学习资料。</p>
+
+</div>
+
+<div class="home-sections" markdown>
+
+<div class="home-card" data-subject="science" markdown>
+
+### :material-flask-outline: [自然科学通识类](自然科学通识类/index.md)
+
+- [普通化学（乙）](自然科学通识类/普通化学（乙）/index.md)
+- [常微分方程](自然科学通识类/常微分方程/index.md)
+- [概率论与数理统计](自然科学通识类/概率论与数理统计/index.md)
+
+</div>
+
+<div class="home-card" data-subject="basic" markdown>
+
+### :material-cog-outline: [专业基础](专业基础/index.md)
+
+- [工程力学](专业基础/工程力学/index.md)
+- [机械设计基础（甲）](专业基础/机械设计基础（甲）/index.md)
+
+</div>
+
+<div class="home-card" data-subject="major" markdown>
+
+### :material-thermometer: [专业必修](专业必修/index.md)
+
+- [工程热力学（甲）](专业必修/工程热力学（甲）/index.md)
+- [工程流体力学（甲）](专业必修/工程流体力学（甲）/index.md)
+
+</div>
+
+<div class="home-card" data-subject="finance" markdown>
+
+### :material-chart-line: [金融学](金融学/index.md)
+
+- [公司金融](金融学/公司金融/index.md)
+
+</div>
+
+</div>
+
+## 关于这个网站
 
 本人平时上课时有记笔记的习惯，每学期下来都有很多页的手写笔记。但是经过两年的学习发现，其实我期末考试的时候也根本不会去翻看自己记的笔记，那我寻思着我记这些笔记干啥呢？既然平时自己记了也不愿意看，说明考试复习的时候确实不想看手写的一些内容，那我就整理成电子版吧，这样总没有借口了吧，看自己的笔记知识点更加全面一些，会尽量少的遗漏上课要点。因此这个网站就应运而生了，一方面是监督自己记笔记了之后好好整理，相当于让自己下课了也自行复习一遍；另一方面也希望自己的学习资料能帮助到后面的学弟学妹们，虽然可能帮助不大吧哈哈哈。
 

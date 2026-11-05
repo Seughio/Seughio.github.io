@@ -10,11 +10,13 @@ Copyright &copy; 2026 Seughio
 """
 extra_javascript = [
   "javascripts/mathjax.js",
+  "javascripts/enhance.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
 ]
 extra_css = [
   "stylesheets/figures.css",
   "stylesheets/site.css",
+  "stylesheets/components.css",
 ]
 
 nav = [

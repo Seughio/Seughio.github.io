@@ -1,175 +1,554 @@
-/* 全站颜色变量：以后想整体换色，优先修改这里。 */
-:root {
-  --site-blue: #288ce8; /* 主蓝色：顶部标题栏、标签导航栏和移动端导航标题。 */
-  --site-blue-dark: #1c7cd6; /* 深蓝色：浅色模式中当前侧栏项的文字。 */
-  --site-blue-deep: #2286de; /* 深色模式主蓝色：保证深色背景下不过亮。 */
-  --site-blue-soft: #eaf3fb; /* 极浅蓝色：浅色模式中当前侧栏项的背景。 */
-  --site-blue-border: #c9dff1; /* 淡蓝边框：浅色模式二级标题下方的分隔线。 */
-} /* 全站颜色变量结束。 */
+/* ==========================================================================
+   全站视觉规范（第一阶段）
+   结构：颜色变量 → 顶栏与标签栏 → 侧栏 → 正文排版 → 标题 → 公式 → 提示块
+         → 表格 → 定义列表 → 其他小元素 → 移动端
+   以后想整体换色，只需修改下面两组 [data-md-color-scheme] 中的变量。
+   ========================================================================== */
 
-/* 浅色模式的 Zensical 主题颜色变量。 */
+/* ---------- 颜色变量：浅色模式 ---------- */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: var(--site-blue); /* 主题主色：按钮、主题组件等优先使用该颜色。 */
-  --md-primary-fg-color--light: #3c83ba; /* 主题主色的浅色版本。 */
-  --md-primary-fg-color--dark: var(--site-blue-dark); /* 主题主色的深色版本。 */
-  --md-accent-fg-color: #1976c5; /* 强调色：链接悬停、交互控件高亮等。 */
-  --md-typeset-a-color: #1769a8; /* 正文链接的默认颜色。 */
-} /* 浅色模式主题变量结束。 */
+  --site-accent: #2563c9; /* 主强调色：链接、编号、当前项、标题色条。 */
+  --site-accent-strong: #1b4fa8; /* 深一档的强调色：当前侧栏项文字、重点文字。 */
+  --site-accent-soft: #edf3fc; /* 极浅强调色：当前侧栏项背景、标签背景。 */
+  --site-highlight: rgb(255 214 102 / 45%); /* 荧光笔颜色：.term-blue 重点句的底色。 */
+  --site-ink: #1c2330; /* 标题与顶栏文字的深墨色。 */
+  --site-border: #e4e8ef; /* 通用细分隔线。 */
+  --site-surface: #f6f8fb; /* 次级底色：表头、公式块、搜索按钮。 */
+  --site-surface-strong: #eef1f6; /* 表格斑马纹与悬停行。 */
 
-/* 深色模式的页面背景变量。 */
+  --md-primary-fg-color: var(--site-accent); /* 主题主色。 */
+  --md-primary-fg-color--light: var(--site-accent); /* 主题主色的浅色版本。 */
+  --md-primary-fg-color--dark: var(--site-accent-strong); /* 主题主色的深色版本。 */
+  --md-accent-fg-color: var(--site-accent-strong); /* 链接悬停、交互控件高亮；跟随学科配色。 */
+  --md-accent-fg-color--transparent: var(--site-accent-soft); /* 当前侧栏项等处的浅底色；覆盖主题 light blue 强调色。 */
+  --md-typeset-a-color: var(--site-accent); /* 正文链接颜色。 */
+}
+
+/* ---------- 颜色变量：深色模式 ---------- */
 [data-md-color-scheme="slate"] {
+  --site-accent: #74a9f5; /* 深色背景下提亮的强调色。 */
+  --site-accent-strong: #9cc2fa; /* 深色模式下的重点文字。 */
+  --site-accent-soft: rgb(116 169 245 / 12%); /* 半透明强调底色。 */
+  --site-highlight: rgb(255 200 80 / 22%); /* 深色模式荧光笔：降低亮度避免刺眼。 */
+  --site-ink: #e6eaf1; /* 标题与顶栏文字。 */
+  --site-border: rgb(255 255 255 / 8%); /* 通用细分隔线。 */
+  --site-surface: #1e242e; /* 次级底色。 */
+  --site-surface-strong: #232a35; /* 表格斑马纹与悬停行。 */
+
   --md-default-bg-color: #171b22; /* 页面和侧栏主背景：深灰蓝，比纯黑稍亮。 */
   --md-default-bg-color--light: rgb(23 27 34 / 54%); /* 主背景的半透明版本。 */
-  --md-default-bg-color--lighter: rgb(23 27 34 / 26%); /* 用于更弱的背景层次。 */
-  --md-default-bg-color--lightest: rgb(23 27 34 / 7%); /* 用于最浅的背景与交互层。 */
-  --md-code-bg-color: #202630; /* 行内代码和代码块背景，比页面背景稍亮。 */
+  --md-default-bg-color--lighter: rgb(23 27 34 / 26%); /* 更弱的背景层次。 */
+  --md-default-bg-color--lightest: rgb(23 27 34 / 7%); /* 最浅的背景与交互层。 */
+  --md-code-bg-color: #202630; /* 代码背景，比页面背景稍亮。 */
   --md-code-bg-color--light: rgb(32 38 48 / 90%); /* 代码背景的半透明版本。 */
+  --md-primary-fg-color: var(--site-accent); /* 主题主色。 */
+  --md-accent-fg-color: var(--site-accent-strong); /* 链接悬停；跟随学科配色。 */
+  --md-accent-fg-color--transparent: var(--site-accent-soft); /* 当前侧栏项等处的浅底色。 */
+  --md-typeset-a-color: var(--site-accent); /* 正文链接颜色。 */
   --color-background: 23 27 34; /* Zensical 现代组件使用的主背景 RGB 数值。 */
   --color-background-subtle: 31 37 47; /* 搜索、弹窗等次级区域的背景 RGB 数值。 */
-  --color-backdrop: 12 15 20; /* 弹窗遮罩背景，仍保留足够的明暗对比。 */
-} /* 深色模式背景变量结束。 */
+  --color-backdrop: 12 15 20; /* 弹窗遮罩背景。 */
+}
 
-/* 页面最上方的站点标题栏。 */
+/* ==========================================================================
+   顶栏与一级标签栏：从整条蓝色改为与页面同色的浅色顶栏，
+   蓝色只留给"当前位置"，让视线回到正文。
+   ========================================================================== */
+
+/* 顶栏：页面同色背景 + 底部细线。 */
 .md-header {
-  background-color: var(--site-blue); /* 将标题栏背景设为主蓝色。 */
-  box-shadow: 0 0.1rem 0.35rem rgb(8 49 82 / 22%); /* 添加轻微阴影，使标题栏与正文分层。 */
-} /* 标题栏样式结束。 */
+  background-color: var(--md-default-bg-color);
+  color: var(--site-ink);
+  box-shadow: 0 1px 0 var(--site-border); /* 用 1px 细线代替投影分层。 */
+}
 
-/* 标题栏中的站点名称。 */
+/* 向下滚动后顶栏出现的阴影：保持轻微。 */
+.md-header--shadow {
+  box-shadow: 0 1px 0 var(--site-border), 0 4px 16px rgb(15 23 42 / 6%);
+}
+
+/* 站点名称：加粗、略收字距。 */
 .md-header__title {
-  color: #fff; /* 将“Seughio 的课程笔记”设为白色。 */
-} /* 站点名称样式结束。 */
+  color: var(--site-ink);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
 
-/* 标题栏中的菜单、搜索和明暗模式切换等图标按钮。 */
+/* 顶栏图标按钮（菜单、明暗切换、Logo）。 */
 .md-header__button {
-  color: #fff; /* 让浅色模式和深色模式按钮都显示为白色。 */
-} /* 标题栏图标按钮样式结束。 */
+  color: var(--site-ink);
+}
 
-/* 标题栏中的 GitHub 仓库入口。 */
+/* Logo 与汉堡菜单使用强调色，作为唯一的品牌色点缀。 */
+.md-header__button.md-logo,
+.md-header__button[for="__drawer"] {
+  color: var(--site-accent);
+}
+
+/* GitHub 仓库入口：弱化成次要信息。 */
 .md-header .md-source {
-  color: #fff; /* 将 GitHub 图标和仓库名称统一设为白色。 */
-} /* GitHub 仓库入口样式结束。 */
+  color: var(--md-default-fg-color--light);
+}
 
-/* 桌面端标题栏中的搜索框。 */
-.md-header .md-search__form {
-  background-color: rgb(255 255 255 / 14%); /* 用半透明白色区分搜索框，同时保留蓝色背景。 */
-} /* 搜索框背景样式结束。 */
-
-/* 鼠标悬停或键盘焦点进入搜索框时。 */
-.md-header .md-search__form:hover,
-.md-header .md-search__form:focus-within {
-  background-color: rgb(255 255 255 / 22%); /* 交互时稍微提高搜索框背景亮度。 */
-} /* 搜索框交互状态结束。 */
-
-/* 搜索框中用户输入的文字。 */
-.md-header .md-search__input {
-  color: #fff; /* 将搜索关键词设为白色。 */
-} /* 搜索框输入文字样式结束。 */
-
-/* 搜索框尚未输入时显示的“查找”提示文字。 */
-.md-header .md-search__input::placeholder {
-  color: rgb(255 255 255 / 76%); /* 使用略透明的白色，与实际输入内容区分。 */
-  opacity: 1; /* 覆盖浏览器默认的 placeholder 透明度。 */
-} /* 搜索框提示文字样式结束。 */
-
-/* 搜索框内的放大镜和清除按钮。 */
-.md-header .md-search__icon {
-  color: #fff; /* 将搜索相关图标设为白色。 */
-} /* 搜索框图标样式结束。 */
-
-/* Zensical 桌面端实际显示的“查找”搜索按钮。 */
+/* 桌面端"查找"搜索按钮：浅灰胶囊 + 细边。 */
 .md-header .md-search__button {
-  background-color: rgb(255 255 255 / 14%); /* 使用半透明白色作为搜索按钮背景。 */
-  color: #fff; /* 将按钮中的“查找”文字设为白色。 */
-} /* 桌面端搜索按钮样式结束。 */
+  background-color: var(--site-surface);
+  border: 1px solid var(--site-border);
+  color: var(--md-default-fg-color--light);
+}
 
-/* 鼠标悬停或键盘聚焦桌面端搜索按钮时。 */
+/* 搜索按钮悬停 / 聚焦。 */
 .md-header .md-search__button:hover,
 .md-header .md-search__button:focus {
-  background-color: rgb(255 255 255 / 22%); /* 交互时稍微提高按钮背景亮度。 */
-  color: #fff; /* 防止主题悬停规则把“查找”恢复为深色。 */
-} /* 桌面端搜索按钮交互状态结束。 */
+  background-color: var(--site-surface-strong);
+  color: var(--site-ink);
+}
 
-/* 搜索按钮左侧由伪元素绘制的放大镜。 */
+/* 搜索按钮左侧的放大镜图标。 */
 .md-header .md-search__button::before {
-  background-color: #fff; /* 将放大镜图标设为白色。 */
-} /* 搜索按钮放大镜样式结束。 */
+  background-color: currentcolor;
+}
 
-/* 搜索按钮右侧的 Ctrl+K 快捷键提示。 */
+/* 搜索按钮右侧的 Ctrl+K 提示。 */
 .md-header .md-search__button::after {
-  background-color: rgb(255 255 255 / 18%); /* 给快捷键提示使用半透明白色背景。 */
-  color: #fff; /* 将 Ctrl+K 文字设为白色。 */
-} /* 搜索快捷键提示样式结束。 */
+  background-color: var(--md-default-bg-color);
+  border: 1px solid var(--site-border);
+  color: var(--md-default-fg-color--light);
+}
 
-/* 桌面端标题栏下方的一级标签导航。 */
+/* 搜索框（展开后的输入区域）。 */
+.md-header .md-search__form {
+  background-color: var(--site-surface);
+}
+
+/* 搜索框交互状态。 */
+.md-header .md-search__form:hover,
+.md-header .md-search__form:focus-within {
+  background-color: var(--site-surface-strong);
+}
+
+/* 搜索框文字与图标。 */
+.md-header .md-search__input,
+.md-header .md-search__icon {
+  color: var(--site-ink);
+}
+
+/* 搜索框提示文字。 */
+.md-header .md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+  opacity: 1;
+}
+
+/* 一级标签栏：与顶栏同色，底部细线。 */
 .md-tabs {
-  background-color: var(--site-blue); /* 与标题栏使用同一种蓝色，避免上下分成两种颜色。 */
-} /* 一级标签导航样式结束。 */
+  background-color: var(--md-default-bg-color);
+  color: var(--site-ink);
+  border-bottom: 1px solid var(--site-border);
+}
 
-/* 一级标签导航中的普通链接。 */
+/* 未选中的标签。 */
 .md-tabs__link {
-  color: rgb(255 255 255 / 82%); /* 未选中的标签使用半透明白色，降低视觉权重。 */
-} /* 普通标签链接样式结束。 */
+  color: var(--md-default-fg-color--light);
+  opacity: 1;
+  font-weight: 500;
+}
 
-/* 获得键盘焦点的标签链接。 */
+/* 悬停 / 聚焦的标签。 */
 .md-tabs__link:focus,
-/* 鼠标悬停的标签链接。 */
-.md-tabs__link:hover,
-/* 当前选中的标签链接。 */
+.md-tabs__link:hover {
+  color: var(--site-ink);
+}
+
+/* 当前标签：强调色文字。 */
 .md-tabs__item--active .md-tabs__link {
-  color: #fff; /* 交互中或当前标签使用纯白色突出显示。 */
-} /* 标签链接交互状态结束。 */
+  color: var(--site-accent);
+  font-weight: 650;
+}
 
-/* 浅色模式下左侧目录中的当前页面链接。 */
-[data-md-color-scheme="default"] .md-nav__link--active {
-  color: var(--site-blue-dark); /* 当前页面链接使用深蓝色文字。 */
-  font-weight: 650; /* 略微加粗当前页面链接；数值越大，文字越粗。 */
-} /* 当前页面链接文字样式结束。 */
+/* 当前标签下方的 2px 强调色下划线。 */
+.md-tabs__item--active {
+  box-shadow: inset 0 -2px 0 var(--site-accent);
+}
 
-/* 浅色模式下当前页面链接的背景和尺寸；排除仅用于包裹子目录的容器。 */
-[data-md-color-scheme="default"] .md-nav__link--active:not(.md-nav__container) {
-  background: var(--site-blue-soft); /* 当前页面链接使用浅蓝色背景。 */
-  border-radius: 6px; /* 四个角统一使用清晰但不过分夸张的圆角。 */
-  margin: 0.08rem 0.2rem 0.08rem 0; /* 留出四周空间，避免圆角贴边或被侧栏裁切。 */
-  padding: 0.26rem 0.45rem; /* 使用均衡内边距，让文字与圆角背景保持距离。 */
-} /* 当前页面链接背景样式结束。 */
+/* ==========================================================================
+   左侧目录
+   ========================================================================== */
 
-/* 浅色模式下正文中的二级标题。 */
-[data-md-color-scheme="default"] .md-typeset h2 {
-  border-bottom: 1px solid var(--site-blue-border); /* 在二级标题下添加一条淡蓝分隔线。 */
-  padding-bottom: 0.28rem; /* 增加标题文字与分隔线之间的距离。 */
-} /* 浅色模式二级标题样式结束。 */
+/* 当前页面链接的文字。 */
+.md-nav__link--active {
+  color: var(--site-accent-strong);
+  font-weight: 650;
+}
 
-/* 浅色模式下没有自定义 class 的普通 Markdown 表格表头。 */
-[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
-  background-color: #edf5fb; /* 使用极浅蓝色区分表头和表格正文。 */
-} /* 浅色模式表头样式结束。 */
+/* 当前页面链接的背景块；排除仅用于包裹子目录的容器。 */
+.md-nav__link--active:not(.md-nav__container) {
+  background: var(--site-accent-soft);
+  border-radius: 6px;
+  margin: 0.08rem 0.2rem 0.08rem 0;
+  padding: 0.26rem 0.45rem;
+}
 
-/* 深色模式下的站点标题栏。 */
-[data-md-color-scheme="slate"] .md-header {
-  background-color: var(--site-blue-deep); /* 深色模式使用较深的蓝色，降低亮度。 */
-} /* 深色模式标题栏样式结束。 */
+/* 右侧"目录"中当前小节：只变色，不加背景块。 */
+.md-nav--secondary .md-nav__link--active {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* 深色模式下的一级标签导航。 */
-[data-md-color-scheme="slate"] .md-tabs {
-  background-color: var(--site-blue-deep); /* 与深色模式标题栏保持同色。 */
-} /* 深色模式一级标签导航样式结束。 */
+/* ==========================================================================
+   正文排版：更大的行高与段距，适合中文长文阅读。
+   ========================================================================== */
 
-/* 深色模式下左侧目录中的当前页面链接。 */
-[data-md-color-scheme="slate"] .md-nav__link--active {
-  color: #7fc3f4; /* 使用亮蓝色，确保在深色背景上清晰可见。 */
-} /* 深色模式当前页面链接样式结束。 */
+/* 正文基础：字号略增，行高 1.85。 */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.85;
+}
 
-/* 深色模式下正文中的二级标题。 */
-[data-md-color-scheme="slate"] .md-typeset h2 {
-  border-bottom: 1px solid rgb(127 195 244 / 28%); /* 添加低透明度亮蓝分隔线。 */
-  padding-bottom: 0.28rem; /* 增加标题文字与分隔线之间的距离。 */
-} /* 深色模式二级标题样式结束。 */
+/* 段落间距。 */
+.md-typeset p {
+  margin: 0.9em 0;
+}
 
-/* 当屏幕宽度不超过 76.234375em 时启用，主要覆盖手机和平板布局。 */
+/* 列表项之间留一点呼吸感。 */
+.md-typeset li {
+  margin-bottom: 0.3em;
+}
+
+/* 加粗文字：使用标题墨色，比正文更"实"。 */
+.md-typeset strong {
+  color: var(--site-ink);
+  font-weight: 650;
+}
+
+/* 正文链接：去掉默认下划线，悬停时出现细下划线。 */
+.md-typeset a {
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* 标题自带的 ¶ 锚点链接不需要下划线。 */
+.md-typeset .headerlink:hover {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   标题层级
+   h1：页面标题，加粗大字
+   h2：左侧强调色短竖条 + 底部细线
+   h3：左侧 3px 色条
+   h4：强调色小标题
+   ========================================================================== */
+
+/* 一级标题。 */
+.md-typeset h1 {
+  color: var(--site-ink);
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.1em;
+}
+
+/* 二级标题：顶部留出更大的章节间距。 */
+.md-typeset h2 {
+  position: relative;
+  margin-top: 2.4em;
+  padding: 0 0 0.4rem 0.85rem; /* 左侧留出色条位置。 */
+  border-bottom: 1px solid var(--site-border);
+  color: var(--site-ink);
+  font-weight: 700;
+}
+
+/* 二级标题左侧的圆角短竖条。 */
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.22em;
+  width: 4px;
+  height: 1.05em;
+  border-radius: 2px;
+  background: var(--site-accent);
+}
+
+/* 三级标题：左侧细色条。 */
+.md-typeset h3 {
+  margin-top: 1.8em;
+  padding-left: 0.6rem;
+  border-left: 3px solid var(--site-accent);
+  color: var(--site-ink);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+/* 四级标题：强调色小标题。 */
+.md-typeset h4 {
+  color: var(--site-accent-strong);
+  font-weight: 650;
+}
+
+/* ==========================================================================
+   独立公式块（$$ ... $$）：浅底圆角卡片，宽公式可横向滚动。
+   ========================================================================== */
+
+.md-typeset div.arithmatex {
+  margin: 1.2em 0;
+  padding: 0.35em 1em;
+  background: var(--site-surface);
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+  overflow-x: auto; /* 手机上长公式不撑破页面。 */
+}
+
+/* 提示块内的公式块：去掉外框，避免框中套框。 */
+.md-typeset .admonition div.arithmatex,
+.md-typeset details div.arithmatex {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ==========================================================================
+   提示块（admonition / details）：浅色底 + 同色细边 + 彩色标题，
+   每种类型固定一个语义色。
+   ========================================================================== */
+
+/* 各类型的语义色。 */
+.md-typeset .admonition,
+.md-typeset details {
+  --adm-c: var(--site-accent); /* 默认（note、info 等）：强调色。 */
+}
+
+.md-typeset .warning,
+.md-typeset .caution,
+.md-typeset .attention,
+.md-typeset .danger,
+.md-typeset .error {
+  --adm-c: #d9534f; /* 易错、警告：红。 */
+}
+
+.md-typeset .tip,
+.md-typeset .hint,
+.md-typeset .important {
+  --adm-c: #0e9f8a; /* 技巧：青绿。 */
+}
+
+.md-typeset .success,
+.md-typeset .check,
+.md-typeset .done {
+  --adm-c: #2f9e44; /* 结论、要点：绿。 */
+}
+
+.md-typeset .question,
+.md-typeset .help,
+.md-typeset .faq {
+  --adm-c: #d08700; /* 思考题：琥珀。 */
+}
+
+.md-typeset .example {
+  --adm-c: #7048e8; /* 例题：紫。 */
+}
+
+/* 提示块外框。 */
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid color-mix(in srgb, var(--adm-c) 26%, transparent);
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--adm-c) 5%, var(--md-default-bg-color));
+  box-shadow: none;
+  font-size: 0.78rem;
+  padding: 0 0.9rem;
+}
+
+/* 提示块标题行（普通块的标题和折叠块的 summary 共用一套排版）。
+   主题的相关规则带 [dir=ltr] 前缀，这里统一加 [dir] 以确保覆盖生效，
+   否则折叠块会沿用主题的内边距和图标位置，与普通块对不齐。 */
+[dir] .md-typeset .admonition > .admonition-title,
+[dir] .md-typeset details > summary {
+  background-color: transparent;
+  color: var(--adm-c);
+  font-weight: 700;
+  border: none;
+  margin: 0 -0.9rem; /* 标题行撑满卡片宽度，图标和箭头相对卡片边缘定位。 */
+  padding: 0.6rem 2.4rem 0.6rem 2.6rem;
+  line-height: 1.5; /* 不沿用正文 1.85 的行高，避免文字相对图标下沉。 */
+}
+
+/* 标题左侧图标：距卡片左边 0.9rem，垂直居中。
+   用独立的 translate 属性而不是 transform，不会和主题的旋转动画冲突。 */
+[dir] .md-typeset .admonition > .admonition-title::before,
+[dir] .md-typeset details > summary::before {
+  background-color: var(--adm-c);
+  left: 0.9rem;
+  right: auto;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+/* 折叠块右侧的展开箭头：距卡片右边 0.8rem，垂直居中。 */
+[dir] .md-typeset details > summary::after {
+  color: var(--adm-c);
+  right: 0.8rem;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+/* 收起时标题是卡片里的最后一个元素，主题会给它加 0.6rem 底部外边距，
+   导致文字偏上、下方空一截。这里去掉，让上下留白对称。 */
+[dir] .md-typeset details:not([open]) > summary {
+  margin-bottom: 0;
+}
+
+/* 提示块正文首段与标题之间不要太空。 */
+.md-typeset .admonition > .admonition-title + *,
+.md-typeset details > summary + * {
+  margin-top: 0.2em;
+}
+
+/* 嵌套在提示块里的提示块 / 折叠块（如“自测”里的“参考答案”）：
+   不再画成卡片套卡片，而是外层卡片里用虚线分隔的一个区段。
+   左右负边距抵消外层内边距，虚线撑满外层宽度，图标与外层图标对齐。 */
+.md-typeset .admonition :is(.admonition, details),
+.md-typeset details :is(.admonition, details) {
+  margin: 0.8rem -0.9rem 0;
+  border: none;
+  border-top: 1px dashed color-mix(in srgb, var(--adm-c) 35%, transparent);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+/* 嵌套区段位于外层末尾时，与外层底边直接衔接，不再留一段空白。 */
+html .md-typeset .admonition > :is(.admonition, details):last-child,
+html .md-typeset details > :is(.admonition, details):last-child {
+  margin-bottom: 0;
+}
+
+/* 提示块里的表格：去掉白底和外框，只保留表头与行分隔线，融入卡片底色。 */
+.md-typeset :is(.admonition, details) table:not([class]) {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.md-typeset :is(.admonition, details) table:not([class]) th {
+  background-color: transparent;
+  border-bottom: 1px solid color-mix(in srgb, var(--adm-c) 30%, transparent);
+}
+
+.md-typeset :is(.admonition, details) table:not([class]) td {
+  border-top: 1px solid color-mix(in srgb, var(--adm-c) 15%, transparent);
+}
+
+.md-typeset :is(.admonition, details) table:not([class]) tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.md-typeset :is(.admonition, details) table:not([class]) tbody tr:hover {
+  background-color: color-mix(in srgb, var(--adm-c) 7%, transparent);
+}
+
+/* ==========================================================================
+   表格：圆角外框、浅灰表头、斑马纹、悬停高亮、数字等宽。
+   ========================================================================== */
+
+/* 表格外框。 */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+  box-shadow: none;
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums; /* 数字等宽，同列数字对齐。 */
+  overflow: hidden;
+}
+
+/* 表头。 */
+.md-typeset table:not([class]) th {
+  background-color: var(--site-surface);
+  color: var(--site-ink);
+  font-weight: 650;
+  border-bottom: 1px solid var(--site-border);
+}
+
+/* 单元格内边距：比主题默认更紧凑。 */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.6em 1.1em;
+}
+
+/* 单元格分隔线。 */
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--site-border);
+  vertical-align: middle;
+}
+
+/* 斑马纹。 */
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--site-surface) 60%, transparent);
+}
+
+/* 鼠标悬停行。 */
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: var(--site-surface-strong);
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   定义列表（术语 : 解释）：术语加粗着色，解释带左侧细线。
+   ========================================================================== */
+
+.md-typeset dl dt {
+  color: var(--site-accent-strong);
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.md-typeset dl dd {
+  margin: 0.25rem 0 0.8rem 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--site-border);
+}
+
+.md-typeset dl dd > p:first-child {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   其他小元素
+   ========================================================================== */
+
+/* 引用块：强调色左线 + 浅底。 */
+.md-typeset blockquote {
+  border-left: 3px solid var(--site-accent);
+  background: var(--site-surface);
+  color: var(--md-default-fg-color--light);
+  padding: 0.4em 1em;
+}
+
+/* 行内代码：更轻的底色与圆角。 */
+.md-typeset :not(pre) > code {
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+/* 分隔线。 */
+.md-typeset hr {
+  border-bottom: 1px solid var(--site-border);
+  margin: 2em 0;
+}
+
+/* ==========================================================================
+   移动端：屏幕宽度不超过 76.234375em（手机和平板）
+   ========================================================================== */
+
 @media screen and (max-width: 76.234375em) {
-  /* 移动端左侧抽屉导航最上方的标题区域。 */
+  /* 移动端抽屉导航顶部标题区：与顶栏一致的浅色。 */
   .md-nav--primary .md-nav__title[for="__drawer"] {
-    background-color: var(--site-blue); /* 让移动端抽屉标题与桌面端标题栏保持同色。 */
-  } /* 移动端抽屉标题样式结束。 */
-} /* 移动端媒体查询结束。 */
+    background-color: var(--md-default-bg-color);
+    color: var(--site-ink);
+    border-bottom: 1px solid var(--site-border);
+  }
+}

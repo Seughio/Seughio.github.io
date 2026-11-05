@@ -3,7 +3,14 @@
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin: 1rem auto;
+  margin: 1.4rem auto 0.6rem;
+  border-radius: 8px;
+}
+
+/* 深色模式：教材插图多为白底黑线，统一垫一块浅色底板，避免刺眼的白块和看不清的黑线。 */
+[data-md-color-scheme="slate"] .md-typeset img[src*="figures/"] {
+  background: #f4f2ec;
+  padding: 0.4rem;
 }
 
 .md-typeset img.fig-small {
@@ -18,9 +25,14 @@
   max-width: 38rem;
 }
 
+/* 重点句：荧光笔效果，只涂文字下半部分，与可点击的链接区分开。 */
 .md-typeset .term-blue {
-  color: #1d6fd7;
+  color: var(--site-ink);
   font-weight: 600;
+  background: linear-gradient(transparent 58%, var(--site-highlight) 58%);
+  padding: 0 0.1em;
+  box-decoration-break: clone; /* 跨行时每一行都有完整底色。 */
+  -webkit-box-decoration-break: clone;
 }
 
 .md-typeset p:has(> img[src*="figures/"]:only-child) {
@@ -125,28 +137,19 @@
   margin-bottom: 0.3rem;
 }
 
-[data-md-color-scheme="slate"] .md-typeset img.cf-fig {
-  background: #f4f2ec;
-  border-radius: 6px;
-  padding: 0.4rem;
-}
 
 /* 图注：小字，紧跟在图下方。 */
 .md-typeset .cf-caption {
   max-width: 40rem;
-  margin: 0 auto 1.2rem;
+  margin: 0 auto 1.6rem;
   color: var(--md-default-fg-color--light);
   font-size: 0.68rem;
   line-height: 1.6;
 }
 
-/* 定义列表：术语标签着色，与解释紧凑排列。 */
-.md-typeset dl dt {
-  color: var(--md-primary-fg-color);
-  font-weight: 600;
+/* 图注开头的"图 N"加粗部分使用强调色。 */
+.md-typeset .cf-caption > strong:first-child {
+  color: var(--site-accent-strong);
 }
 
-.md-typeset dl dd {
-  margin-top: 0.15rem;
-  margin-bottom: 0.6rem;
-}
+/* 定义列表样式已统一移到 site.css。 */
