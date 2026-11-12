@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="330" viewBox="0 0 400 330" role="img" aria-labelledby="title desc">
+<title id="title">货币扩张</title>
+<desc id="desc">IS: r=100-0.04Y；LM₀: r=-60+0.04Y；LM₁: r=-61.6+0.04Y；均衡或曲线上代表点：(2000, 20)、(2020, 19.2)。收入单位为亿元，利率按百分数数值表示。</desc>
+<metadata id="mapping">{&quot;domain&quot;: [1975, 2045], &quot;rates&quot;: [18.2, 21.8], &quot;left&quot;: 52, &quot;top&quot;: 24, &quot;bottom&quot;: 270, &quot;xScale&quot;: 3.942857142857143, &quot;rScale&quot;: 68.3333333333333, &quot;curves&quot;: [{&quot;name&quot;: &quot;IS&quot;, &quot;a&quot;: 100, &quot;b&quot;: -0.04}, {&quot;name&quot;: &quot;LM₀&quot;, &quot;a&quot;: -60, &quot;b&quot;: 0.04}, {&quot;name&quot;: &quot;LM₁&quot;, &quot;a&quot;: -61.6, &quot;b&quot;: 0.04}], &quot;points&quot;: [[2000, 20, &quot;old-dot&quot;], [2020, 19.2, &quot;lm-dot&quot;]]}</metadata>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-is:#82998b;--old-lm:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .is {stroke:var(--green);stroke-width:var(--curve-width);}
+    .lm {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .is-old {stroke:var(--old-is);stroke-width:1.5;stroke-dasharray:4 4;}
+    .lm-old {stroke:var(--old-lm);stroke-width:1.5;stroke-dasharray:4 4;}
+    .is-label {fill:var(--green);}.lm-label {fill:var(--ochre-text);}
+    .is-old-label,.lm-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .is-dot {fill:var(--green);}.lm-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<style>:root {--label-size:15px;--tick-size:13px;}</style>
+<rect width="400" height="330" fill="var(--paper)"/>
+<path class="guide" d="M52 147L150.57143 147"/>
+<path class="guide" d="M150.57143 147L150.57143 270"/>
+<path class="guide" d="M52 201.66667L229.42857 201.66667"/>
+<path class="guide" d="M229.42857 201.66667L229.42857 270"/>
+<path class="axis" d="M52 24L52 270"/>
+<path class="axis" d="M52 270L336 270"/>
+<text x="52" y="293" class="tick" text-anchor="middle">1975</text>
+<text x="150.57143" y="293" class="tick" text-anchor="middle">2000</text>
+<text x="229.42857" y="293" class="tick" text-anchor="middle">2020</text>
+<text x="40" y="274" class="tick" text-anchor="end">18.2</text>
+<text x="40" y="205.66667" class="tick" text-anchor="end">19.2</text>
+<text x="40" y="151" class="tick" text-anchor="end">20</text>
+<text x="42" y="29" class="label" text-anchor="end">r (%)</text>
+<text x="349" y="275" class="label" text-anchor="start">Y</text>
+<path class="is" d="M52 78.66667L328 270" data-name="IS" data-a="100" data-b="-0.04"/>
+<text x="338" y="252" class="is-label" text-anchor="start">IS</text>
+<path class="lm-old" d="M52 215.33333L328 24" data-name="LM₀" data-a="-60" data-b="0.04"/>
+<text x="338" y="29" class="lm-old-label" text-anchor="start">LM₀</text>
+<path class="lm" d="M130.85714 270L328 133.33333" data-name="LM₁" data-a="-61.6" data-b="0.04"/>
+<text x="338" y="138.33333" class="lm-label" text-anchor="start">LM₁</text>
+<circle cx="150.57143" cy="147" r="3.6" class="old-dot"/>
+<circle cx="229.42857" cy="201.66667" r="3.6" class="lm-dot"/>
+</svg>

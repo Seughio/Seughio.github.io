@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="362" viewBox="0 0 560 362" role="img" aria-labelledby="title desc">
+<title id="title">LM 的三个区域</title><desc id="desc">行为特征示意：凯恩斯区域水平，中间区域逐渐变陡，古典区域垂直；不使用固定参数的线性LM。</desc>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-is:#82998b;--old-lm:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .is {stroke:var(--green);stroke-width:var(--curve-width);}
+    .lm {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .is-old {stroke:var(--old-is);stroke-width:1.5;stroke-dasharray:4 4;}
+    .lm-old {stroke:var(--old-lm);stroke-width:1.5;stroke-dasharray:4 4;}
+    .is-label {fill:var(--green);}.lm-label {fill:var(--ochre-text);}
+    .is-old-label,.lm-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .is-dot {fill:var(--green);}.lm-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<style>.region{font-size:13px;fill:var(--muted);}</style>
+<metadata id="mapping">{&quot;domain&quot;: [0, 1200], &quot;rates&quot;: [0, 26], &quot;left&quot;: 66, &quot;top&quot;: 26, &quot;bottom&quot;: 302, &quot;xScale&quot;: 0.34, &quot;rScale&quot;: 10.615384615384615}</metadata>
+<rect width="560" height="362" fill="var(--paper)"/>
+<path class="axis" d="M66 26L66 302"/>
+<path class="axis" d="M66 302L482 302"/>
+<text x="56" y="31" class="label" text-anchor="end">r</text>
+<text x="495" y="307" class="label" text-anchor="start">Y</text>
+<text x="54" y="306" class="tick" text-anchor="end">0</text>
+<text x="54" y="284.76923" class="tick" text-anchor="end">r₀</text>
+<path class="guide" d="M202 302L202 280.76923"/>
+<text x="202" y="325" class="tick" text-anchor="middle">Y₁</text>
+<path class="guide" d="M406 302L406 89.69231"/>
+<text x="406" y="325" class="tick" text-anchor="middle">Y₂</text>
+<path class="lm" d="M66 280.76923L202 280.76923L206.00527 280.7324L210.009 280.62192L214.00964 280.43783L218.00566 280.1802L221.9955 279.84914L225.97763 279.44477L229.95052 278.96725L233.91263 278.41676L237.86244 277.79351L241.79843 277.09774L245.71907 276.32973L249.62285 275.48976L253.50828 274.57817L257.37385 273.59529L261.21807 272.54152L265.03947 271.41726L268.83656 270.22294L272.60788 268.95902L276.35198 267.62599L280.06742 266.22437L283.75276 264.75468L287.40659 263.21751L291.02749 261.61344L294.61406 259.94309L298.16493 258.20711L301.67873 256.40616L305.1541 254.54094L308.58971 252.61217L311.98422 250.62059L315.33633 248.56696L318.64474 246.45209L321.90819 244.27679L325.12541 242.04188L328.29517 239.74825L331.41623 237.39677L334.4874 234.98834L337.5075 232.5239L340.47535 230.00439L343.38982 227.43079L346.24978 224.8041L349.05413 222.12531L351.80179 219.39547L354.4917 216.61562L357.12282 213.78684L359.69413 210.91022L362.20465 207.98687L364.65341 205.01792L367.03947 202.00451L369.36189 198.94779L371.6198 195.84896L373.81232 192.7092L375.93859 189.52973L377.99781 186.31176L379.98919 183.05655L381.91194 179.76535L383.76533 176.43942L385.54865 173.08004L387.26121 169.68852L388.90234 166.26616L390.47142 162.81428L391.96785 159.33421L393.39103 155.82729L394.74043 152.29487L396.01553 148.73832L397.21583 145.15901L398.34087 141.55831L399.39021 137.93762L400.36346 134.29833L401.26024 130.64184L402.0802 126.96957L402.82302 123.28292L403.48842 119.58332L404.07615 115.8722L404.58597 112.15099L405.01768 108.42112L405.37114 104.68403L405.64618 100.94116L405.84272 97.19395L405.96068 93.44385L406 89.69231L406 47.23077"/>
+<text x="416" y="52.23077" class="lm-label" text-anchor="start">LM</text>
+<text x="134" y="349" class="region" text-anchor="middle">凯恩斯区域</text>
+<text x="304" y="349" class="region" text-anchor="middle">中间区域</text>
+<text x="389" y="68.46154" class="region" text-anchor="end">古典区域</text>
+</svg>

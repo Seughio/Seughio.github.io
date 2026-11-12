@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="330" viewBox="0 0 400 330" role="img" aria-labelledby="title desc">
+<title id="title">货币供求与均衡利率</title><desc id="desc">收入固定为2000，L=400-5r。实际货币供给由300增至350，均衡利率由20降至10。</desc>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-is:#82998b;--old-lm:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .is {stroke:var(--green);stroke-width:var(--curve-width);}
+    .lm {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .is-old {stroke:var(--old-is);stroke-width:1.5;stroke-dasharray:4 4;}
+    .lm-old {stroke:var(--old-lm);stroke-width:1.5;stroke-dasharray:4 4;}
+    .is-label {fill:var(--green);}.lm-label {fill:var(--ochre-text);}
+    .is-old-label,.lm-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .is-dot {fill:var(--green);}.lm-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style><style>:root {--label-size:15px;--tick-size:13px;}</style>
+<style>.region{font-size:13px;fill:var(--muted);}</style>
+<metadata id="mapping">{&quot;domain&quot;: [200, 500], &quot;rates&quot;: [0, 40], &quot;left&quot;: 52, &quot;top&quot;: 28, &quot;bottom&quot;: 270, &quot;xScale&quot;: 0.92, &quot;rScale&quot;: 6.05}</metadata>
+<rect width="400" height="330" fill="var(--paper)"/>
+<path class="axis" d="M52 28L52 270"/>
+<path class="axis" d="M52 270L336 270"/>
+<text x="42" y="33" class="label" text-anchor="end">r (%)</text>
+<path class="guide" d="M52 149L144 149"/>
+<text x="144" y="293" class="tick" text-anchor="middle">300</text>
+<text x="40" y="153" class="tick" text-anchor="end">20</text>
+<path class="guide" d="M52 209.5L190 209.5"/>
+<text x="190" y="293" class="tick" text-anchor="middle">350</text>
+<text x="40" y="213.5" class="tick" text-anchor="end">10</text>
+<text x="52" y="293" class="tick" text-anchor="middle">200</text>
+<text x="40" y="274" class="tick" text-anchor="end">0</text>
+<path class="is" d="M52 28L236 270"/>
+<text x="246" y="258" class="is-label" text-anchor="start">L</text>
+<path class="lm-old" d="M144 270L144 28"/>
+<text x="144" y="19" class="lm-old-label" text-anchor="middle">S₀</text>
+<path class="lm" d="M190 270L190 28"/>
+<text x="190" y="19" class="lm-label" text-anchor="middle">S₁</text>
+<circle cx="144" cy="149" r="3.6" class="old-dot"/>
+<circle cx="190" cy="209.5" r="3.6" class="lm-dot"/>
+<text x="336" y="317" class="label" text-anchor="end">M/P，L</text>
+</svg>

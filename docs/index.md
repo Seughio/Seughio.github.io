@@ -47,6 +47,7 @@ hide:
 ### :material-chart-line: [金融学](金融学/index.md)
 
 - [公司金融](金融学/公司金融/index.md)
+- [宏观经济学](金融学/宏观经济学/index.md)
 
 </div>
 

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="362" viewBox="0 0 560 362" role="img" aria-labelledby="title desc">
+<title id="title">IS 与 LM 的共同均衡</title>
+<desc id="desc">IS: r=100-0.04Y；LM: r=-60+0.04Y；均衡或曲线上代表点：(2000, 20)。收入单位为亿元，利率按方程数值表示。</desc>
+<metadata id="mapping">{&quot;domain&quot;: [1600, 2400], &quot;rates&quot;: [0, 40], &quot;left&quot;: 66, &quot;top&quot;: 26, &quot;bottom&quot;: 302, &quot;xScale&quot;: 0.51, &quot;rScale&quot;: 6.9, &quot;curves&quot;: [{&quot;name&quot;: &quot;IS&quot;, &quot;a&quot;: 100, &quot;b&quot;: -0.04}, {&quot;name&quot;: &quot;LM&quot;, &quot;a&quot;: -60, &quot;b&quot;: 0.04}], &quot;points&quot;: [[2000, 20, &quot;ink-dot&quot;]]}</metadata>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-is:#82998b;--old-lm:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .is {stroke:var(--green);stroke-width:var(--curve-width);}
+    .lm {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .is-old {stroke:var(--old-is);stroke-width:1.5;stroke-dasharray:4 4;}
+    .lm-old {stroke:var(--old-lm);stroke-width:1.5;stroke-dasharray:4 4;}
+    .is-label {fill:var(--green);}.lm-label {fill:var(--ochre-text);}
+    .is-old-label,.lm-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .is-dot {fill:var(--green);}.lm-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<rect width="560" height="362" fill="var(--paper)"/>
+
+
+<path class="axis" d="M66 26L66 302"/>
+<path class="axis" d="M66 302L482 302"/>
+<text x="66" y="325" class="tick" text-anchor="middle">1600</text>
+<text x="270" y="325" class="tick" text-anchor="middle">2000</text>
+<text x="54" y="306" class="tick" text-anchor="end">0</text>
+<text x="54" y="168" class="tick" text-anchor="end">20</text>
+<text x="56" y="31" class="label" text-anchor="end">r</text>
+<text x="495" y="307" class="label" text-anchor="start">Y</text>
+<path class="is" d="M66 53.6L474 274.4" data-name="IS" data-a="100" data-b="-0.04"/>
+<text x="484" y="279.4" class="is-label" text-anchor="start">IS</text>
+<path class="lm" d="M66 274.4L474 53.6" data-name="LM" data-a="-60" data-b="0.04"/>
+<text x="484" y="58.6" class="lm-label" text-anchor="start">LM</text>
+<circle cx="270" cy="164" r="3.6" class="ink-dot"/>
+<text x="270.0" y="57.400000000000006" text-anchor="middle" style="font-size:15px;font-weight:600">A</text><text x="270.0" y="75.4" text-anchor="middle" style="font-size:13px">I &lt; S</text><text x="270.0" y="92.4" text-anchor="middle" style="font-size:13px">L &lt; M</text><text x="142.5" y="154.0" text-anchor="middle" style="font-size:15px;font-weight:600">B</text><text x="142.5" y="172.0" text-anchor="middle" style="font-size:13px">I &gt; S</text><text x="142.5" y="189.0" text-anchor="middle" style="font-size:13px">L &lt; M</text><text x="270.0" y="250.60000000000002" text-anchor="middle" style="font-size:15px;font-weight:600">C</text><text x="270.0" y="268.6" text-anchor="middle" style="font-size:13px">I &gt; S</text><text x="270.0" y="285.6" text-anchor="middle" style="font-size:13px">L &gt; M</text><text x="397.5" y="154.0" text-anchor="middle" style="font-size:15px;font-weight:600">D</text><text x="397.5" y="172.0" text-anchor="middle" style="font-size:13px">I &lt; S</text><text x="397.5" y="189.0" text-anchor="middle" style="font-size:13px">L &gt; M</text></svg>
