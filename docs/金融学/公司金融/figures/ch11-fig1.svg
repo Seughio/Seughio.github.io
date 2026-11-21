@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="44" y="16" font-size="12" fill="#52514e">股票基金</text>
+<rect x="107.0" y="6" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text x="128.0" y="16" font-size="12" fill="#52514e">债券基金</text>
+<rect x="191.0" y="6" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="212.0" y="16" font-size="12" fill="#52514e">50/50 组合</text>
+<line x1="50" x2="620" y1="260.0" y2="260.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="264.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">−10%</text>
+<line x1="50" x2="620" y1="209.0" y2="209.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="42.0" y="213.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0%</text>
+<line x1="50" x2="620" y1="158.0" y2="158.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="162.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">10%</text>
+<line x1="50" x2="620" y1="107.0" y2="107.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="111.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">20%</text>
+<line x1="50" x2="620" y1="56.0" y2="56.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="60.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">30%</text>
+<text x="42.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="start" font-weight="400">收益率</text>
+<text x="145.0" y="282.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">衰退</text>
+<path d="M96.0,209.0 V240.7 Q96.0,244.7 100.0,244.7 H122.0 Q126.0,244.7 126.0,240.7 V209.0 Z" fill="#2a78d6"/>
+<text x="111.0" y="259.7" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">−7%</text>
+<path d="M130.0,209.0 V126.3 Q130.0,122.3 134.0,122.3 H156.0 Q160.0,122.3 160.0,126.3 V209.0 Z" fill="#1baf7a"/>
+<text x="145.0" y="116.3" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">17%</text>
+<path d="M164.0,209.0 V187.5 Q164.0,183.5 168.0,183.5 H190.0 Q194.0,183.5 194.0,187.5 V209.0 Z" fill="#eb6834"/>
+<text x="179.0" y="177.5" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">5%</text>
+<text x="335.0" y="282.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">正常</text>
+<path d="M286.0,209.0 V151.8 Q286.0,147.8 290.0,147.8 H312.0 Q316.0,147.8 316.0,151.8 V209.0 Z" fill="#2a78d6"/>
+<text x="301.0" y="141.8" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">12%</text>
+<path d="M320.0,209.0 V177.3 Q320.0,173.3 324.0,173.3 H346.0 Q350.0,173.3 350.0,177.3 V209.0 Z" fill="#1baf7a"/>
+<text x="335.0" y="167.3" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">7%</text>
+<path d="M354.0,209.0 V164.6 Q354.0,160.6 358.0,160.6 H380.0 Q384.0,160.6 384.0,164.6 V209.0 Z" fill="#eb6834"/>
+<text x="369.0" y="154.6" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">9.5%</text>
+<text x="525.0" y="282.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">繁荣</text>
+<path d="M476.0,209.0 V70.2 Q476.0,66.2 480.0,66.2 H502.0 Q506.0,66.2 506.0,70.2 V209.0 Z" fill="#2a78d6"/>
+<text x="491.0" y="60.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">28%</text>
+<path d="M510.0,209.0 V220.3 Q510.0,224.3 514.0,224.3 H536.0 Q540.0,224.3 540.0,220.3 V209.0 Z" fill="#1baf7a"/>
+<text x="525.0" y="239.3" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">−3%</text>
+<path d="M544.0,209.0 V149.2 Q544.0,145.2 548.0,145.2 H570.0 Q574.0,145.2 574.0,149.2 V209.0 Z" fill="#eb6834"/>
+<text x="559.0" y="139.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">12.5%</text>
+</svg>

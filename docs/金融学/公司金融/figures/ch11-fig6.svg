@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<line x1="50" x2="616" y1="252.0" y2="252.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="42.0" y="256.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0%</text>
+<line x1="50" x2="616" y1="195.0" y2="195.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="199.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">5%</text>
+<line x1="50" x2="616" y1="138.0" y2="138.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="142.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">10%</text>
+<line x1="50" x2="616" y1="81.0" y2="81.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="85.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">15%</text>
+<line x1="50" x2="616" y1="24.0" y2="24.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="28.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">20%</text>
+<text x="50.0" y="270.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">0</text>
+<text x="191.5" y="270.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">0.5</text>
+<text x="333.0" y="270.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">1</text>
+<text x="474.5" y="270.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">1.5</text>
+<text x="616.0" y="270.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400">2</text>
+<text x="616.0" y="288.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">β</text>
+<text x="42.0" y="14.0" font-size="11" fill="#8a8984" text-anchor="start" font-weight="400">期望收益</text>
+<path d="M50.0,115.2 H333.0 V252.0" fill="none" stroke="#a3a29c" stroke-dasharray="4 4"/>
+<polyline points="50.0,195.0 616.0,35.4" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="596.2" y="63.8" font-size="12" fill="#2a78d6" text-anchor="end" font-weight="600">SML</text>
+<circle cx="50.0" cy="195.0" r="4.5" fill="#52514e" stroke="#fcfcfb" stroke-width="2"/>
+<text x="58.0" y="211.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400">无风险资产 5%</text>
+<circle cx="245.3" cy="139.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="253.3" y="155.9" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400">3M  β 0.69，9.83%</text>
+<circle cx="333.0" cy="115.2" r="4.5" fill="#52514e" stroke="#fcfcfb" stroke-width="2"/>
+<text x="323.0" y="107.2" font-size="11.5" fill="#0b0b0b" text-anchor="end" font-weight="400">市场组合  β 1，12%</text>
+<circle cx="428.7" cy="88.2" r="4.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+<text x="438.7" y="104.2" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="400">40/60 组合  β 1.338，14.37%</text>
+<circle cx="550.9" cy="53.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="540.9" y="45.8" font-size="11.5" fill="#0b0b0b" text-anchor="end" font-weight="400">惠普  β 1.77，17.39%</text>
+</svg>
