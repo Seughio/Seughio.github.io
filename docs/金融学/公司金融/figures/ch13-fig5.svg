@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#a3a29c"/>
+<text x="44" y="16" font-size="12" fill="#52514e">风险调整后的必要收益率</text>
+<rect x="194.5" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="215.5" y="16" font-size="12" fill="#52514e">项目 IRR</text>
+<line x1="50" x2="616" y1="262.0" y2="262.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="42.0" y="266.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0%</text>
+<line x1="50" x2="616" y1="220.8" y2="220.8" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="224.8" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">5%</text>
+<line x1="50" x2="616" y1="179.6" y2="179.6" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="183.6" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">10%</text>
+<line x1="50" x2="616" y1="138.4" y2="138.4" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="142.4" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">15%</text>
+<line x1="50" x2="616" y1="97.2" y2="97.2" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="101.2" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">20%</text>
+<line x1="50" x2="616" y1="56.0" y2="56.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="60.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">25%</text>
+<text x="42.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="start" font-weight="400">收益率</text>
+<path d="M102.8,262.0 V101.2 Q102.8,97.2 106.8,97.2 H132.8 Q136.8,97.2 136.8,101.2 V262.0 Z" fill="#a3a29c"/>
+<text x="119.8" y="91.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">20%</text>
+<path d="M151.9,262.0 V125.9 Q151.9,121.9 155.9,121.9 H181.9 Q185.9,121.9 185.9,125.9 V262.0 Z" fill="#2a78d6"/>
+<text x="168.9" y="115.9" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">17%</text>
+<text x="144.3" y="280.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">项目 D</text>
+<path d="M291.5,262.0 V142.4 Q291.5,138.4 295.5,138.4 H321.5 Q325.5,138.4 325.5,142.4 V262.0 Z" fill="#a3a29c"/>
+<text x="308.5" y="132.4" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">15%</text>
+<path d="M340.5,262.0 V117.7 Q340.5,113.7 344.5,113.7 H370.5 Q374.5,113.7 374.5,117.7 V262.0 Z" fill="#2a78d6"/>
+<text x="357.5" y="107.7" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">18%</text>
+<text x="333.0" y="280.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">项目 E</text>
+<path d="M480.1,262.0 V183.6 Q480.1,179.6 484.1,179.6 H510.1 Q514.1,179.6 514.1,183.6 V262.0 Z" fill="#a3a29c"/>
+<text x="497.1" y="173.6" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">10%</text>
+<path d="M529.2,262.0 V167.1 Q529.2,163.1 533.2,163.1 H559.2 Q563.2,163.1 563.2,167.1 V262.0 Z" fill="#2a78d6"/>
+<text x="546.2" y="157.1" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">12%</text>
+<text x="521.7" y="280.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">项目 F</text>
+<line x1="50.0" x2="616.0" y1="138.4" y2="138.4" stroke="#eb6834" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="612.2" y="131.8" font-size="11" fill="#eb6834" text-anchor="end" font-weight="600">WACC 15%</text>
+</svg>
