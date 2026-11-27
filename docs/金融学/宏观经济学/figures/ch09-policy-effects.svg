@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="280" viewBox="0 0 660 280" role="img" aria-labelledby="title desc">
+<title id="title">财政政策与货币政策的产出效应</title>
+<desc id="desc">Y₀=9250，Y₁=9375，Y₂=9750。例 9.1：政府投资增加 100，IS 右移，均衡由 (9250, 115) 移到 (9375, 122.5)，产出效应 125；若利率不变产出可达 9750，挤出效应 375。例 9.2：货币供给增加 100，LM 右移，均衡移到 (9500, 110)，产出效应 250。</desc>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-green:#82998b;--old-ochre:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;stroke-linejoin:round;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .green {stroke:var(--green);stroke-width:var(--curve-width);}
+    .ochre {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .green-old {stroke:var(--old-green);stroke-width:1.5;stroke-dasharray:4 4;}
+    .ochre-old {stroke:var(--old-ochre);stroke-width:1.5;stroke-dasharray:4 4;}
+    .green-label {fill:var(--green);}.ochre-label {fill:var(--ochre-text);}
+    .green-old-label,.ochre-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    .title {font-size:var(--label-size);font-weight:600;}
+    .arrow {stroke:var(--muted);stroke-width:1.2;}
+    .arrow-head {fill:var(--muted);stroke:none;}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .green-dot {fill:var(--green);}.ochre-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<rect width="660" height="280" fill="var(--paper)"/>
+<text x="165" y="16" class="title" text-anchor="middle">财政政策：政府投资 +100</text>
+<path class="guide" d="M46 143L117.91 143"/>
+<path class="guide" d="M117.91 143L117.91 246"/>
+<path class="guide" d="M46 104.38L143.59 104.38"/>
+<path class="guide" d="M143.59 104.38L143.59 246"/>
+<path class="guide" d="M46 143L220.64 143"/>
+<path class="guide" d="M220.64 143L220.64 246"/>
+<path class="axis" d="M46 40L46 246"/>
+<path class="axis" d="M46 246L280 246"/>
+<text x="38" y="44" class="label" text-anchor="end">r</text>
+<text x="286" y="251" class="label" text-anchor="start">Y</text>
+<text x="38" y="262" class="tick" text-anchor="end">O</text>
+<text x="117.91" y="265" class="tick" text-anchor="middle">Y₀</text>
+<text x="143.59" y="265" class="tick" text-anchor="middle">Y₁</text>
+<text x="220.64" y="265" class="tick" text-anchor="middle">Y₂</text>
+<text x="38" y="147" class="tick" text-anchor="end">115</text>
+<text x="38" y="108.38" class="tick" text-anchor="end">122.5</text>
+<path class="green-old" d="M46 106.95L54.67 111.3L63.34 115.65L72.02 119.99L80.69 124.34L89.36 128.69L98.03 133.04L106.71 137.38L115.38 141.73L124.05 146.08L132.72 150.43L141.4 154.78L150.07 159.12L158.74 163.47L167.41 167.82L176.09 172.17L184.76 176.51L193.43 180.86L202.1 185.21L210.78 189.56L219.45 193.9L228.12 198.25L236.79 202.6L245.47 206.95L254.14 211.3L261.73 215.1"/>
+<text x="265.73" y="219.1" class="green-old-label" text-anchor="start">IS</text>
+<path class="green" d="M46 55.45L54.67 59.8L63.34 64.15L72.02 68.49L80.69 72.84L89.36 77.19L98.03 81.54L106.71 85.88L115.38 90.23L124.05 94.58L132.72 98.93L141.4 103.28L150.07 107.62L158.74 111.97L167.41 116.32L176.09 120.67L184.76 125.01L193.43 129.36L202.1 133.71L210.78 138.06L219.45 142.4L228.12 146.75L236.79 151.1L245.47 155.45L254.14 159.8L261.73 163.6"/>
+<text x="265.73" y="167.6" class="green-label" text-anchor="start">IS&#x27;</text>
+<path class="ochre" d="M80.93 198.62L86.96 189.55L92.99 180.48L99.02 171.42L105.04 162.35L111.07 153.28L117.1 144.21L123.13 135.14L129.16 126.07L135.19 117.01L141.22 107.94L147.25 98.87L153.28 89.8L159.31 80.73L165.34 71.67L171.37 62.6L177.4 53.53L183.43 44.46L185.69 41.06"/>
+<text x="189.69" y="45.06" class="ochre-label" text-anchor="start">LM</text>
+<circle cx="117.91" cy="143" r="4" class="old-dot"/>
+<text x="109.91" y="147" class="label" text-anchor="end">E₀</text>
+<circle cx="143.59" cy="104.38" r="4" class="ink-dot"/>
+<text x="151.59" y="97.38" class="label" text-anchor="start">E₁</text>
+<circle cx="220.64" cy="143" r="4" class="old-dot"/>
+<text x="212.64" y="147" class="label" text-anchor="end">E₂</text>
+<text x="495" y="16" class="title" text-anchor="middle">货币政策：货币供给 +100</text>
+<path class="guide" d="M376 143L447.91 143"/>
+<path class="guide" d="M447.91 143L447.91 246"/>
+<path class="guide" d="M376 168.75L499.27 168.75"/>
+<path class="guide" d="M499.27 168.75L499.27 246"/>
+<path class="axis" d="M376 40L376 246"/>
+<path class="axis" d="M376 246L610 246"/>
+<text x="368" y="44" class="label" text-anchor="end">r</text>
+<text x="616" y="251" class="label" text-anchor="start">Y</text>
+<text x="368" y="262" class="tick" text-anchor="end">O</text>
+<text x="447.91" y="265" class="tick" text-anchor="middle">9250</text>
+<text x="499.27" y="265" class="tick" text-anchor="middle">9500</text>
+<text x="368" y="172.75" class="tick" text-anchor="end">110</text>
+<text x="368" y="147" class="tick" text-anchor="end">115</text>
+<path class="green" d="M376 106.95L384.67 111.3L393.34 115.65L402.02 119.99L410.69 124.34L419.36 128.69L428.03 133.04L436.71 137.38L445.38 141.73L454.05 146.08L462.72 150.43L471.4 154.78L480.07 159.12L488.74 163.47L497.41 167.82L506.09 172.17L514.76 176.51L523.43 180.86L532.1 185.21L540.78 189.56L549.45 193.9L558.12 198.25L566.79 202.6L575.47 206.95L584.14 211.3L591.73 215.1"/>
+<text x="595.73" y="219.1" class="green-label" text-anchor="start">IS</text>
+<path class="ochre-old" d="M410.93 198.62L416.54 190.17L422.16 181.73L427.78 173.28L433.39 164.83L439.01 156.38L444.63 147.94L450.24 139.49L455.86 131.04L461.48 122.6L467.09 114.15L472.71 105.7L478.32 97.26L483.94 88.81L489.56 80.36L495.17 71.91L500.79 63.47L506.41 55.02L512.02 46.57L516.24 40.24"/>
+<text x="492.24" y="44.24" class="ochre-old-label" text-anchor="start">LM</text>
+<path class="ochre" d="M447.91 246L453.28 237.93L458.65 229.85L464.02 221.78L469.38 213.7L474.75 205.63L480.12 197.55L485.49 189.48L490.86 181.41L496.23 173.33L501.6 165.26L506.96 157.18L512.33 149.11L517.7 141.03L523.07 132.96L528.44 124.88L533.81 116.81L539.18 108.74L544.54 100.66L549.91 92.59L555.28 84.51L560.65 76.44L566.02 68.36L571.39 60.29L576.76 52.22L581.45 45.15"/>
+<text x="585.45" y="49.15" class="ochre-label" text-anchor="start">LM&#x27;</text>
+<circle cx="447.91" cy="143" r="4" class="old-dot"/>
+<text x="439.91" y="147" class="label" text-anchor="end">E₀</text>
+<circle cx="499.27" cy="168.75" r="4" class="ink-dot"/>
+<text x="507.27" y="161.75" class="label" text-anchor="start">E₁</text>
+</svg>
