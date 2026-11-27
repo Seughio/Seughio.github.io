@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="690" viewBox="0 0 340 690" role="img" aria-labelledby="title desc">
+<title id="title">BP 曲线的三种形状</title>
+<desc id="desc">BP 曲线斜率为 γ/σ。资本完全流动（σ→∞）时 BP 在世界利率处水平；资本完全不流动（σ=0）时 BP 垂直；资本不完全流动时 BP 向右上倾斜。各图中 BP 左上方为国际收支顺差（BP&gt;0），右下方为逆差（BP&lt;0）。</desc>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-green:#82998b;--old-ochre:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;stroke-linejoin:round;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .green {stroke:var(--green);stroke-width:var(--curve-width);}
+    .ochre {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .green-old {stroke:var(--old-green);stroke-width:1.5;stroke-dasharray:4 4;}
+    .ochre-old {stroke:var(--old-ochre);stroke-width:1.5;stroke-dasharray:4 4;}
+    .green-label {fill:var(--green);}.ochre-label {fill:var(--ochre-text);}
+    .green-old-label,.ochre-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    .title {font-size:var(--label-size);font-weight:600;}
+    .arrow {stroke:var(--muted);stroke-width:1.2;}
+    .arrow-head {fill:var(--muted);stroke:none;}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .green-dot {fill:var(--green);}.ochre-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<style>:root {--label-size:15px;--tick-size:13px;}</style>
+<rect width="340" height="690" fill="var(--paper)"/>
+<text x="170" y="16" class="title" text-anchor="middle">资本完全流动：BP 水平</text>
+<path class="axis" d="M46 40L46 196"/>
+<path class="axis" d="M46 196L290 196"/>
+<text x="38" y="44" class="label" text-anchor="end">r</text>
+<text x="296" y="201" class="label" text-anchor="start">Y</text>
+<text x="38" y="212" class="tick" text-anchor="end">O</text>
+<text x="38" y="122" class="tick" text-anchor="end">rw</text>
+<path class="ochre" d="M57.8 118L65.86 118L73.93 118L81.99 118L90.06 118L98.12 118L106.19 118L114.25 118L122.31 118L130.38 118L138.44 118L146.51 118L154.57 118L162.64 118L170.7 118L178.76 118L186.83 118L194.89 118L202.96 118L211.02 118L219.09 118L227.15 118L235.22 118L243.28 118L251.34 118L258.4 118"/>
+<text x="228.4" y="108" class="ochre-label" text-anchor="start">BP=0</text>
+<text x="170" y="246" class="title" text-anchor="middle">资本完全不流动：BP 垂直</text>
+<path class="axis" d="M46 270L46 426"/>
+<path class="axis" d="M46 426L290 426"/>
+<text x="38" y="274" class="label" text-anchor="end">r</text>
+<text x="296" y="431" class="label" text-anchor="start">Y</text>
+<text x="38" y="442" class="tick" text-anchor="end">O</text>
+<path class="ochre" d="M164 418.2L164 412.56L164 406.91L164 401.27L164 395.62L164 389.98L164 384.33L164 378.69L164 373.05L164 367.4L164 361.76L164 356.11L164 350.47L164 344.83L164 339.18L164 333.54L164 327.89L164 322.25L164 316.6L164 310.96L164 305.32L164 299.67L164 294.03L164 288.38L164 282.74L164 277.8"/>
+<text x="170" y="289.8" class="ochre-label" text-anchor="start">BP=0</text>
+<text x="170" y="476" class="title" text-anchor="middle">资本不完全流动：向右上倾斜</text>
+<path class="axis" d="M46 500L46 656"/>
+<path class="axis" d="M46 656L290 656"/>
+<text x="38" y="504" class="label" text-anchor="end">r</text>
+<text x="296" y="661" class="label" text-anchor="start">Y</text>
+<text x="38" y="672" class="tick" text-anchor="end">O</text>
+<path class="ochre" d="M69.6 632.6L76.72 628.21L83.83 623.82L90.95 619.43L98.06 615.04L105.18 610.65L112.29 606.26L119.41 601.87L126.52 597.48L133.64 593.09L140.76 588.7L147.87 584.31L154.99 579.92L162.1 575.53L169.22 571.14L176.33 566.75L183.45 562.36L190.56 557.97L197.68 553.58L204.8 549.19L211.91 544.8L219.03 540.41L226.14 536.02L233.26 531.63L240.37 527.24L246.6 523.4"/>
+<text x="206.6" y="515.4" class="ochre-label" text-anchor="start">BP=0</text>
+</svg>

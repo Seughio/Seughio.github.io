@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1040" viewBox="0 0 360 1040" role="img" aria-labelledby="title desc">
+<title id="title">蒙代尔-弗莱明模型中的政策效果</title>
+<desc id="desc">间接标价法下 e 上升表示本币升值。固定汇率：财政扩张使 IS* 右移，汇率面临上升压力，央行增加货币供给使 LM* 右移，汇率保持 e*，收入由 Y₁ 增至 Y₂；货币扩张使 LM* 右移、汇率下降，央行抛售外汇收回本币，LM* 回到原位，收入不变。浮动汇率：财政扩张使 IS* 右移，汇率由 e₁ 升至 e₂，收入不变；货币扩张使 LM* 右移，汇率由 e₁ 降至 e₂，收入由 Y₁ 增至 Y₂。</desc>
+<style>
+    :root {--paper:#fff;--ink:#46564c;--muted:#69766c;--green:#416f5d;
+      --ochre:#ad7c51;--ochre-text:#96643e;--axis:#939f97;--guide:#e0e6e1;
+      --old-green:#82998b;--old-ochre:#a48d79;--old-point:#718078;
+      --curve-width:1.8;--axis-width:.85;--guide-width:.75;
+      --label-size:14px;--tick-size:12px;}
+    text {font-family:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;
+      fill:var(--ink);font-size:var(--label-size);font-variant-numeric:tabular-nums;}
+    path {fill:none;stroke-linecap:butt;stroke-linejoin:round;}
+    .axis {stroke:var(--axis);stroke-width:var(--axis-width);}
+    .guide {stroke:var(--guide);stroke-width:var(--guide-width);stroke-dasharray:3 5;}
+    .green {stroke:var(--green);stroke-width:var(--curve-width);}
+    .ochre {stroke:var(--ochre);stroke-width:var(--curve-width);}
+    .green-old {stroke:var(--old-green);stroke-width:1.5;stroke-dasharray:4 4;}
+    .ochre-old {stroke:var(--old-ochre);stroke-width:1.5;stroke-dasharray:4 4;}
+    .green-label {fill:var(--green);}.ochre-label {fill:var(--ochre-text);}
+    .green-old-label,.ochre-old-label {fill:var(--muted);}
+    .tick {fill:var(--muted);font-size:var(--tick-size);}
+    .title {font-size:var(--label-size);font-weight:600;}
+    .arrow {stroke:var(--muted);stroke-width:1.2;}
+    .arrow-head {fill:var(--muted);stroke:none;}
+    circle {stroke:var(--paper);stroke-width:1.1;}
+    .green-dot {fill:var(--green);}.ochre-dot {fill:var(--ochre);}
+    .ink-dot {fill:var(--ink);}.old-dot {fill:var(--old-point);}
+    </style>
+<style>:root {--label-size:15px;--tick-size:13px;}</style>
+<rect width="360" height="1040" fill="var(--paper)"/>
+<text x="180" y="16" class="title" text-anchor="middle">固定汇率：扩张性财政政策</text>
+<path class="guide" d="M46 133L162.36 133"/>
+<path class="guide" d="M162.36 133L162.36 226"/>
+<path class="guide" d="M46 95.8L162.36 95.8"/>
+<path class="guide" d="M162.36 95.8L162.36 226"/>
+<path class="guide" d="M46 133L208.91 133"/>
+<path class="guide" d="M208.91 133L208.91 226"/>
+<path class="axis" d="M46 40L46 226"/>
+<path class="axis" d="M46 226L310 226"/>
+<text x="38" y="44" class="label" text-anchor="end">e</text>
+<text x="316" y="231" class="label" text-anchor="start">Y</text>
+<text x="38" y="242" class="tick" text-anchor="end">O</text>
+<text x="162.36" y="245" class="tick" text-anchor="middle">Y₁</text>
+<text x="208.91" y="245" class="tick" text-anchor="middle">Y₂</text>
+<text x="38" y="137" class="tick" text-anchor="end">e*</text>
+<path class="green-old" d="M59.96 51.16L68.2 57.74L76.43 64.32L84.66 70.9L92.9 77.48L101.13 84.06L109.36 90.64L117.6 97.22L125.83 103.8L134.06 110.38L142.3 116.96L150.53 123.54L158.76 130.12L166.99 136.7L175.23 143.28L183.46 149.86L191.69 156.44L199.93 163.02L208.16 169.6L216.39 176.18L224.63 182.76L232.86 189.34L241.09 195.92L249.33 202.5L257.56 209.08L264.76 214.84"/>
+<text x="268.76" y="218.84" class="green-old-label" text-anchor="start">IS*₁</text>
+<path class="green" d="M104.18 49.3L110.82 54.61L117.47 59.92L124.11 65.23L130.75 70.54L137.4 75.84L144.04 81.15L150.68 86.46L157.32 91.77L163.97 97.08L170.61 102.39L177.25 107.7L183.89 113.01L190.54 118.32L197.18 123.63L203.82 128.93L210.46 134.24L217.11 139.55L223.75 144.86L230.39 150.17L237.04 155.48L243.68 160.79L250.32 166.1L256.96 171.41L263.61 176.71L269.42 181.36"/>
+<text x="273.42" y="185.36" class="green-label" text-anchor="start">IS*₂</text>
+<path class="ochre-old" d="M162.36 216.7L162.36 209.97L162.36 203.24L162.36 196.51L162.36 189.78L162.36 183.05L162.36 176.32L162.36 169.59L162.36 162.86L162.36 156.13L162.36 149.4L162.36 142.67L162.36 135.94L162.36 129.21L162.36 122.48L162.36 115.76L162.36 109.03L162.36 102.3L162.36 95.57L162.36 88.84L162.36 82.11L162.36 75.38L162.36 68.65L162.36 61.92L162.36 55.19L162.36 49.3"/>
+<text x="152.36" y="43.3" class="ochre-old-label" text-anchor="start">LM*₁</text>
+<path class="ochre" d="M208.91 216.7L208.91 209.97L208.91 203.24L208.91 196.51L208.91 189.78L208.91 183.05L208.91 176.32L208.91 169.59L208.91 162.86L208.91 156.13L208.91 149.4L208.91 142.67L208.91 135.94L208.91 129.21L208.91 122.48L208.91 115.76L208.91 109.03L208.91 102.3L208.91 95.57L208.91 88.84L208.91 82.11L208.91 75.38L208.91 68.65L208.91 61.92L208.91 55.19L208.91 49.3"/>
+<text x="198.91" y="43.3" class="ochre-label" text-anchor="start">LM*₂</text>
+<circle cx="162.36" cy="133" r="4" class="old-dot"/>
+<text x="154.36" y="137" class="label" text-anchor="end">E₁</text>
+<circle cx="162.36" cy="95.8" r="4" class="old-dot"/>
+<circle cx="208.91" cy="133" r="4" class="ink-dot"/>
+<text x="216.91" y="126" class="label" text-anchor="start">E₂</text>
+<text x="180" y="276" class="title" text-anchor="middle">固定汇率：扩张性货币政策</text>
+<path class="guide" d="M46 430.2L208.91 430.2"/>
+<path class="guide" d="M208.91 430.2L208.91 486"/>
+<path class="guide" d="M46 393L162.36 393"/>
+<path class="guide" d="M162.36 393L162.36 486"/>
+<path class="axis" d="M46 300L46 486"/>
+<path class="axis" d="M46 486L310 486"/>
+<text x="38" y="304" class="label" text-anchor="end">e</text>
+<text x="316" y="491" class="label" text-anchor="start">Y</text>
+<text x="38" y="502" class="tick" text-anchor="end">O</text>
+<text x="162.36" y="505" class="tick" text-anchor="middle">Y₁</text>
+<text x="208.91" y="505" class="tick" text-anchor="middle">Y′</text>
+<text x="38" y="397" class="tick" text-anchor="end">e*</text>
+<path class="green" d="M59.96 311.16L68.2 317.74L76.43 324.32L84.66 330.9L92.9 337.48L101.13 344.06L109.36 350.64L117.6 357.22L125.83 363.8L134.06 370.38L142.3 376.96L150.53 383.54L158.76 390.12L166.99 396.7L175.23 403.28L183.46 409.86L191.69 416.44L199.93 423.02L208.16 429.6L216.39 436.18L224.63 442.76L232.86 449.34L241.09 455.92L249.33 462.5L257.56 469.08L264.76 474.84"/>
+<text x="268.76" y="478.84" class="green-label" text-anchor="start">IS*</text>
+<path class="ochre-old" d="M208.91 476.7L208.91 469.97L208.91 463.24L208.91 456.51L208.91 449.78L208.91 443.05L208.91 436.32L208.91 429.59L208.91 422.86L208.91 416.13L208.91 409.4L208.91 402.67L208.91 395.94L208.91 389.21L208.91 382.48L208.91 375.76L208.91 369.03L208.91 362.3L208.91 355.57L208.91 348.84L208.91 342.11L208.91 335.38L208.91 328.65L208.91 321.92L208.91 315.19L208.91 309.3"/>
+<text x="198.91" y="303.3" class="ochre-old-label" text-anchor="start">LM*₂</text>
+<path class="ochre" d="M162.36 476.7L162.36 469.97L162.36 463.24L162.36 456.51L162.36 449.78L162.36 443.05L162.36 436.32L162.36 429.59L162.36 422.86L162.36 416.13L162.36 409.4L162.36 402.67L162.36 395.94L162.36 389.21L162.36 382.48L162.36 375.76L162.36 369.03L162.36 362.3L162.36 355.57L162.36 348.84L162.36 342.11L162.36 335.38L162.36 328.65L162.36 321.92L162.36 315.19L162.36 309.3"/>
+<text x="152.36" y="303.3" class="ochre-label" text-anchor="start">LM*₁</text>
+<circle cx="208.91" cy="430.2" r="4" class="old-dot"/>
+<circle cx="162.36" cy="393" r="4" class="ink-dot"/>
+<text x="170.36" y="386" class="label" text-anchor="start">E₁</text>
+<text x="180" y="536" class="title" text-anchor="middle">浮动汇率：扩张性财政政策</text>
+<path class="guide" d="M46 653L162.36 653"/>
+<path class="guide" d="M162.36 653L162.36 746"/>
+<path class="guide" d="M46 615.8L162.36 615.8"/>
+<path class="guide" d="M162.36 615.8L162.36 746"/>
+<path class="axis" d="M46 560L46 746"/>
+<path class="axis" d="M46 746L310 746"/>
+<text x="38" y="564" class="label" text-anchor="end">e</text>
+<text x="316" y="751" class="label" text-anchor="start">Y</text>
+<text x="38" y="762" class="tick" text-anchor="end">O</text>
+<text x="162.36" y="765" class="tick" text-anchor="middle">Y*</text>
+<text x="38" y="657" class="tick" text-anchor="end">e₁</text>
+<text x="38" y="619.8" class="tick" text-anchor="end">e₂</text>
+<path class="green-old" d="M59.96 571.16L68.2 577.74L76.43 584.32L84.66 590.9L92.9 597.48L101.13 604.06L109.36 610.64L117.6 617.22L125.83 623.8L134.06 630.38L142.3 636.96L150.53 643.54L158.76 650.12L166.99 656.7L175.23 663.28L183.46 669.86L191.69 676.44L199.93 683.02L208.16 689.6L216.39 696.18L224.63 702.76L232.86 709.34L241.09 715.92L249.33 722.5L257.56 729.08L264.76 734.84"/>
+<text x="268.76" y="738.84" class="green-old-label" text-anchor="start">IS*₁</text>
+<path class="green" d="M104.18 569.3L110.82 574.61L117.47 579.92L124.11 585.23L130.75 590.54L137.4 595.84L144.04 601.15L150.68 606.46L157.32 611.77L163.97 617.08L170.61 622.39L177.25 627.7L183.89 633.01L190.54 638.32L197.18 643.63L203.82 648.93L210.46 654.24L217.11 659.55L223.75 664.86L230.39 670.17L237.04 675.48L243.68 680.79L250.32 686.1L256.96 691.41L263.61 696.71L269.42 701.36"/>
+<text x="273.42" y="705.36" class="green-label" text-anchor="start">IS*₂</text>
+<path class="ochre" d="M162.36 736.7L162.36 729.97L162.36 723.24L162.36 716.51L162.36 709.78L162.36 703.05L162.36 696.32L162.36 689.59L162.36 682.86L162.36 676.13L162.36 669.4L162.36 662.67L162.36 655.94L162.36 649.21L162.36 642.48L162.36 635.76L162.36 629.03L162.36 622.3L162.36 615.57L162.36 608.84L162.36 602.11L162.36 595.38L162.36 588.65L162.36 581.92L162.36 575.19L162.36 569.3"/>
+<text x="152.36" y="563.3" class="ochre-label" text-anchor="start">LM*</text>
+<circle cx="162.36" cy="653" r="4" class="old-dot"/>
+<text x="154.36" y="657" class="label" text-anchor="end">E₁</text>
+<circle cx="162.36" cy="615.8" r="4" class="ink-dot"/>
+<text x="170.36" y="608.8" class="label" text-anchor="start">E₂</text>
+<text x="180" y="796" class="title" text-anchor="middle">浮动汇率：扩张性货币政策</text>
+<path class="guide" d="M46 913L162.36 913"/>
+<path class="guide" d="M162.36 913L162.36 1006"/>
+<path class="guide" d="M46 950.2L208.91 950.2"/>
+<path class="guide" d="M208.91 950.2L208.91 1006"/>
+<path class="axis" d="M46 820L46 1006"/>
+<path class="axis" d="M46 1006L310 1006"/>
+<text x="38" y="824" class="label" text-anchor="end">e</text>
+<text x="316" y="1011" class="label" text-anchor="start">Y</text>
+<text x="38" y="1022" class="tick" text-anchor="end">O</text>
+<text x="162.36" y="1025" class="tick" text-anchor="middle">Y₁</text>
+<text x="208.91" y="1025" class="tick" text-anchor="middle">Y₂</text>
+<text x="38" y="954.2" class="tick" text-anchor="end">e₂</text>
+<text x="38" y="917" class="tick" text-anchor="end">e₁</text>
+<path class="green" d="M59.96 831.16L68.2 837.74L76.43 844.32L84.66 850.9L92.9 857.48L101.13 864.06L109.36 870.64L117.6 877.22L125.83 883.8L134.06 890.38L142.3 896.96L150.53 903.54L158.76 910.12L166.99 916.7L175.23 923.28L183.46 929.86L191.69 936.44L199.93 943.02L208.16 949.6L216.39 956.18L224.63 962.76L232.86 969.34L241.09 975.92L249.33 982.5L257.56 989.08L264.76 994.84"/>
+<text x="268.76" y="998.84" class="green-label" text-anchor="start">IS*</text>
+<path class="ochre-old" d="M162.36 996.7L162.36 989.97L162.36 983.24L162.36 976.51L162.36 969.78L162.36 963.05L162.36 956.32L162.36 949.59L162.36 942.86L162.36 936.13L162.36 929.4L162.36 922.67L162.36 915.94L162.36 909.21L162.36 902.48L162.36 895.76L162.36 889.03L162.36 882.3L162.36 875.57L162.36 868.84L162.36 862.11L162.36 855.38L162.36 848.65L162.36 841.92L162.36 835.19L162.36 829.3"/>
+<text x="152.36" y="823.3" class="ochre-old-label" text-anchor="start">LM*₁</text>
+<path class="ochre" d="M208.91 996.7L208.91 989.97L208.91 983.24L208.91 976.51L208.91 969.78L208.91 963.05L208.91 956.32L208.91 949.59L208.91 942.86L208.91 936.13L208.91 929.4L208.91 922.67L208.91 915.94L208.91 909.21L208.91 902.48L208.91 895.76L208.91 889.03L208.91 882.3L208.91 875.57L208.91 868.84L208.91 862.11L208.91 855.38L208.91 848.65L208.91 841.92L208.91 835.19L208.91 829.3"/>
+<text x="198.91" y="823.3" class="ochre-label" text-anchor="start">LM*₂</text>
+<circle cx="162.36" cy="913" r="4" class="old-dot"/>
+<text x="154.36" y="917" class="label" text-anchor="end">E₁</text>
+<circle cx="208.91" cy="950.2" r="4" class="ink-dot"/>
+<text x="216.91" y="943.2" class="label" text-anchor="start">E₂</text>
+</svg>
