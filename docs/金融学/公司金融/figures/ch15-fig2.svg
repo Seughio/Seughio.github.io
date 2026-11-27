@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+<rect x="23" y="6" width="12" height="12" rx="2" fill="#a3a29c"/>
+<text x="44" y="16" font-size="12" fill="#52514e">持股比例</text>
+<rect x="107.0" y="6" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="128.0" y="16" font-size="12" fill="#52514e">表决权比例</text>
+<line x1="50" x2="616" y1="252.0" y2="252.0" stroke="#a3a29c" stroke-width="1.2"/>
+<text x="42.0" y="256.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">0%</text>
+<line x1="50" x2="616" y1="199.0" y2="199.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="203.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">20%</text>
+<line x1="50" x2="616" y1="146.0" y2="146.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="150.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">40%</text>
+<line x1="50" x2="616" y1="93.0" y2="93.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="97.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">60%</text>
+<line x1="50" x2="616" y1="40.0" y2="40.0" stroke="#e8e7e2" stroke-width="1"/>
+<text x="42.0" y="44.0" font-size="11" fill="#8a8984" text-anchor="end" font-weight="400">80%</text>
+<text x="42.0" y="28.0" font-size="11" fill="#8a8984" text-anchor="start" font-weight="400">占比</text>
+<path d="M83.9,252.0 V224.1 Q83.9,220.1 87.9,220.1 H113.9 Q117.9,220.1 117.9,224.1 V252.0 Z" fill="#a3a29c"/>
+<text x="100.9" y="214.1" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">12.0%</text>
+<path d="M123.6,252.0 V173.2 Q123.6,169.2 127.6,169.2 H153.6 Q157.6,169.2 157.6,173.2 V252.0 Z" fill="#2a78d6"/>
+<text x="140.6" y="163.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">31.2%</text>
+<text x="120.8" y="270.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">季昕华</text>
+<path d="M225.4,252.0 V241.3 Q225.4,237.3 229.4,237.3 H255.4 Q259.4,237.3 259.4,241.3 V252.0 Z" fill="#a3a29c"/>
+<text x="242.4" y="231.3" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">5.5%</text>
+<path d="M265.1,252.0 V217.8 Q265.1,213.8 269.1,213.8 H295.1 Q299.1,213.8 299.1,217.8 V252.0 Z" fill="#2a78d6"/>
+<text x="282.1" y="207.8" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">14.4%</text>
+<text x="262.2" y="270.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">莫显峰</text>
+<path d="M366.9,252.0 V241.3 Q366.9,237.3 370.9,237.3 H396.9 Q400.9,237.3 400.9,241.3 V252.0 Z" fill="#a3a29c"/>
+<text x="383.9" y="231.3" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">5.5%</text>
+<path d="M406.6,252.0 V217.8 Q406.6,213.8 410.6,213.8 H436.6 Q440.6,213.8 440.6,217.8 V252.0 Z" fill="#2a78d6"/>
+<text x="423.6" y="207.8" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">14.4%</text>
+<text x="403.8" y="270.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">华琨</text>
+<path d="M508.4,252.0 V52.2 Q508.4,48.2 512.4,48.2 H538.4 Q542.4,48.2 542.4,52.2 V252.0 Z" fill="#a3a29c"/>
+<text x="525.4" y="42.2" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">76.9%</text>
+<path d="M548.1,252.0 V150.1 Q548.1,146.1 552.1,146.1 H578.1 Q582.1,146.1 582.1,150.1 V252.0 Z" fill="#2a78d6"/>
+<text x="565.1" y="140.1" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">40.0%</text>
+<text x="545.2" y="270.0" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="400">其他股东</text>
+</svg>
