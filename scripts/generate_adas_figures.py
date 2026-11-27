@@ -125,33 +125,6 @@ def figure(name, title, desc, panels, cols, pw=300, ph=260, mobile=False):
     (OUT / f'{name}.svg').write_text('\n'.join(out) + '\n', encoding='utf-8')
 
 
-# ---------- 1. AD 推导（例 4.2 数据） ----------
-is_ = lambda r: 1250 - 30 * r
-lm = lambda P: (lambda r: 750 / P + 20 * r)
-ad = lambda P: 500 + 450 / P
-assert abs(is_(10) - 950) < 1e-9 and abs(lm(1)(10) - 950) < 1e-9
-assert abs(is_(15) - 800) < 1e-9 and abs(lm(1.5)(15) - 800) < 1e-9
-assert abs(ad(1) - 950) < 1e-9 and abs(ad(1.5) - 800) < 1e-9
-rs = linspace(0, 25, 2)
-rl = linspace(0, 21, 2)
-islm = Panel('IS-LM：P 上升，LM 左移', (600, 1200), (0, 25), 'Y', 'r', (
-    ('IS', [(is_(r), r) for r in rs], 'green', 6, 4),
-    ('LM(P=1)', [(lm(1)(r), r) for r in rl], 'ochre', -40, -8),
-    ('LM(P=1.5)', [(lm(1.5)(r), r) for r in rl], 'ochre-old', -40, -8),
-), points=((950, 10, 'ink-dot', 'E₁'), (800, 15, 'old-dot', 'E₂')),
-    xticks=((800, '800'), (950, '950')), yticks=((10, '10'), (15, '15')))
-Ps = linspace(.8, 2.0)
-adp = Panel('AD：Y = 500 + 450/P', (600, 1200), (.6, 2.0), 'Y', 'P', (
-    ('AD', [(ad(P), P) for P in reversed(Ps)], 'green', 6, 4),
-), points=((950, 1, 'ink-dot', 'D₁'), (800, 1.5, 'old-dot', 'D₂')),
-    xticks=((800, '800'), (950, '950')), yticks=((1, '1'), (1.5, '1.5')))
-desc1 = ('例 4.2：IS 为 Y=1250−30r；P=1 时 LM 为 Y=750+20r，均衡 (950, 10)；'
-         'P=1.5 时 LM 为 Y=500+20r，均衡 (800, 15)。对应 AD 曲线 Y=500+450/P 上的点 (950, 1)、(800, 1.5)。')
-figure('ch04-ad-derivation', 'AD 曲线的推导', desc1, (islm, adp), 2, 320, 270)
-figure('ch04-ad-derivation-mobile', 'AD 曲线的推导', desc1, (islm, adp), 1, 360, 270, True)
-
-
-# ---------- 2. AS 曲线形状 ----------
 YF = 10
 
 
@@ -164,18 +137,6 @@ def sas(shift=0.0):
     return pts
 
 
-short = Panel('短期 AS：工资刚性', (0, 13), (0, 10), 'Y', 'P', (
-    ('SAS', sas(), 'ochre', 6, 10),
-), xticks=((YF, 'Yf'),), yticks=())
-long = Panel('长期 AS：工资完全伸缩', (0, 13), (0, 10), 'Y', 'P', (
-    ('LAS', [(YF, 1), (YF, 9.5)], 'ochre', 6, 10),
-), xticks=((YF, 'Yf'),))
-desc2 = '左：短期 AS 由近乎水平段、向右上倾斜段和在 Yf 处的垂直段组成；右：长期 AS 在充分就业产出 Yf 处垂直。'
-figure('ch04-as-shapes', 'AS 曲线的形状', desc2, (short, long), 2, 300, 250)
-figure('ch04-as-shapes-mobile', 'AS 曲线的形状', desc2, (short, long), 1, 340, 250, True)
-
-
-# ---------- 3. 宏观均衡的四种变动 ----------
 def adline(c):
     return [(c - 6, 9.5), (c + 2.5, 9.5 - 8.5 * 8.9 / 9.5)]  # on the line through (c-6, 9.5), slope -8.9/9.5
 
@@ -206,18 +167,60 @@ def shift_panel(title, ad0, ad1, s0, s1):
                  points=((e0[0], e0[1], 'old-dot', 'E₀'), (e1[0], e1[1], 'ink-dot', 'E₁')))
 
 
-p_adr = shift_panel('AD 右移：增长与通胀', 8.5, 10.5, 0, 0)
-p_adl = shift_panel('AD 左移：衰退与通缩', 10.5, 8.5, 0, 0)
-p_asr = shift_panel('AS 右移：技术进步', 11, 11, 0, 2)
-p_asl = shift_panel('AS 左移：滞胀', 11, 11, 2, 0)
-desc3 = ('四个图共用同一形状的短期 AS。AD 右移：产出与价格同升；AD 左移：产出与价格同降；'
-         'AS 右移：产出上升、价格下降；AS 左移：产出下降、价格上升（滞胀）。')
-panels = (p_adr, p_adl, p_asr, p_asl)
-figure('ch04-equilibrium-shifts', '宏观均衡的四种变动', desc3, panels, 4, 240, 240)
-figure('ch04-equilibrium-shifts-mobile', '宏观均衡的四种变动', desc3, panels, 2, 200, 230, True)
+def main():
+    # ---------- 1. AD 推导（例 4.2 数据） ----------
+    is_ = lambda r: 1250 - 30 * r
+    lm = lambda P: (lambda r: 750 / P + 20 * r)
+    ad = lambda P: 500 + 450 / P
+    assert abs(is_(10) - 950) < 1e-9 and abs(lm(1)(10) - 950) < 1e-9
+    assert abs(is_(15) - 800) < 1e-9 and abs(lm(1.5)(15) - 800) < 1e-9
+    assert abs(ad(1) - 950) < 1e-9 and abs(ad(1.5) - 800) < 1e-9
+    rs = linspace(0, 25, 2)
+    rl = linspace(0, 21, 2)
+    islm = Panel('IS-LM：P 上升，LM 左移', (600, 1200), (0, 25), 'Y', 'r', (
+        ('IS', [(is_(r), r) for r in rs], 'green', 6, 4),
+        ('LM(P=1)', [(lm(1)(r), r) for r in rl], 'ochre', -40, -8),
+        ('LM(P=1.5)', [(lm(1.5)(r), r) for r in rl], 'ochre-old', -40, -8),
+    ), points=((950, 10, 'ink-dot', 'E₁'), (800, 15, 'old-dot', 'E₂')),
+        xticks=((800, '800'), (950, '950')), yticks=((10, '10'), (15, '15')))
+    Ps = linspace(.8, 2.0)
+    adp = Panel('AD：Y = 500 + 450/P', (600, 1200), (.6, 2.0), 'Y', 'P', (
+        ('AD', [(ad(P), P) for P in reversed(Ps)], 'green', 6, 4),
+    ), points=((950, 1, 'ink-dot', 'D₁'), (800, 1.5, 'old-dot', 'D₂')),
+        xticks=((800, '800'), (950, '950')), yticks=((1, '1'), (1.5, '1.5')))
+    desc1 = ('例 4.2：IS 为 Y=1250−30r；P=1 时 LM 为 Y=750+20r，均衡 (950, 10)；'
+             'P=1.5 时 LM 为 Y=500+20r，均衡 (800, 15)。对应 AD 曲线 Y=500+450/P 上的点 (950, 1)、(800, 1.5)。')
+    figure('ch04-ad-derivation', 'AD 曲线的推导', desc1, (islm, adp), 2, 320, 270)
+    figure('ch04-ad-derivation-mobile', 'AD 曲线的推导', desc1, (islm, adp), 1, 360, 270, True)
 
-# sanity: direction checks for each panel
-for p, dy_sign, dp_sign in ((p_adr, 1, 1), (p_adl, -1, -1), (p_asr, 1, -1), (p_asl, -1, 1)):
-    (a, b, *_), (c, d, *_) = p.points
-    assert (c - a) * dy_sign > 0 and (d - b) * dp_sign > 0, p.title
-print('ok')
+    # ---------- 2. AS 曲线形状 ----------
+    short = Panel('短期 AS：工资刚性', (0, 13), (0, 10), 'Y', 'P', (
+        ('SAS', sas(), 'ochre', 6, 10),
+    ), xticks=((YF, 'Yf'),), yticks=())
+    long = Panel('长期 AS：工资完全伸缩', (0, 13), (0, 10), 'Y', 'P', (
+        ('LAS', [(YF, 1), (YF, 9.5)], 'ochre', 6, 10),
+    ), xticks=((YF, 'Yf'),))
+    desc2 = '左：短期 AS 由近乎水平段、向右上倾斜段和在 Yf 处的垂直段组成；右：长期 AS 在充分就业产出 Yf 处垂直。'
+    figure('ch04-as-shapes', 'AS 曲线的形状', desc2, (short, long), 2, 300, 250)
+    figure('ch04-as-shapes-mobile', 'AS 曲线的形状', desc2, (short, long), 1, 340, 250, True)
+
+    # ---------- 3. 宏观均衡的四种变动 ----------
+    p_adr = shift_panel('AD 右移：增长与通胀', 8.5, 10.5, 0, 0)
+    p_adl = shift_panel('AD 左移：衰退与通缩', 10.5, 8.5, 0, 0)
+    p_asr = shift_panel('AS 右移：技术进步', 11, 11, 0, 2)
+    p_asl = shift_panel('AS 左移：滞胀', 11, 11, 2, 0)
+    desc3 = ('四个图共用同一形状的短期 AS。AD 右移：产出与价格同升；AD 左移：产出与价格同降；'
+             'AS 右移：产出上升、价格下降；AS 左移：产出下降、价格上升（滞胀）。')
+    panels = (p_adr, p_adl, p_asr, p_asl)
+    figure('ch04-equilibrium-shifts', '宏观均衡的四种变动', desc3, panels, 4, 240, 240)
+    figure('ch04-equilibrium-shifts-mobile', '宏观均衡的四种变动', desc3, panels, 2, 200, 230, True)
+
+    # sanity: direction checks for each panel
+    for p, dy_sign, dp_sign in ((p_adr, 1, 1), (p_adl, -1, -1), (p_asr, 1, -1), (p_asl, -1, 1)):
+        (a, b, *_), (c, d, *_) = p.points
+        assert (c - a) * dy_sign > 0 and (d - b) * dp_sign > 0, p.title
+    print('ok')
+
+
+if __name__ == '__main__':
+    main()
